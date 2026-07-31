@@ -45,7 +45,7 @@
  nav ul li a { color: #fff; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; }
  nav ul li a:hover { color: var(--primary-gold); }
 
- /* Hero */
+ /* Hero - Ana Sayfa */
  .hero { 
  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80');
  background-size: cover; background-position: center; height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 20px; position: relative;
@@ -154,7 +154,7 @@
  border-left-color: #d35400;
  }
 
- /* Ekskavatör ve İş Makinaları */
+ /* Ekskavatör & İş Makinaları (Saha Fotoğrafları) */
  .excavator-section { background-color: var(--light-grey); }
  .machine-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; width: 90%; max-width: 1200px; margin: auto; }
  .machine-card { overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: transform 0.4s; }
@@ -246,7 +246,7 @@
  border-color: #fff;
  }
 
- /* Modal */
+ /* Modal (Popup) Stilleri */
  .modal {
  display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); backdrop-filter: blur(10px);
  }
@@ -374,7 +374,7 @@
  </div>
  </section>
 
- <!-- Ekskavatör ve İş Makinaları -->
+ <!-- Ekskavatör & İş Makinaları -->
  <section id="excavator" class="excavator-section">
  <div class="section-title">
  <h3>🚜 Ekskavatör & İş Makinaları</h3>
@@ -449,20 +449,26 @@
  <p>&copy; 2026 İBRAHİM YILMAZ İŞ MAKİNALARİ KİRALAMA | Türkiye Geneli Hizmet</p>
  </footer>
 
- <!-- Modal -->
+ <!-- Teklif Formu Penceresi (Modal) -->
  <div id="quoteModal" class="modal">
  <div class="modal-content">
  <span class="close" onclick="closeModal()">&times;</span>
- <h2 style="text-align:center; color:var(--dark-black); margin-bottom:25px; font-weight:900;">Teklif İste</h2>
+ <h2 style="text-align:center; color:#000; margin-bottom:25px;">Teklif İste</h2>
+ 
  <form id="whatsappForm" onsubmit="sendToWhatsapp(event)">
+ <!-- Ad Soyad -->
  <div class="form-group">
  <label>Adınız Soyadınız *</label>
- <input type="text" id="name" placeholder="Örn: Ahmet Yılmaz" required>
+ <input type="text" id="name" required>
  </div>
+ 
+ <!-- Telefon -->
  <div class="form-group">
  <label>Telefon Numaranız *</label>
- <input type="tel" id="phone" placeholder="05XX XXX XX XX" required>
+ <input type="tel" id="phone" required>
  </div>
+ 
+ <!-- Makine Seçimi -->
  <div class="form-group">
  <label>Makine Türü *</label>
  <select id="machine" required>
@@ -484,6 +490,8 @@
  <option value="Arazöz">Arazöz</option>
  </select>
  </div>
+ 
+ <!-- İl Seçimi -->
  <div class="form-group">
  <label>İl *</label>
  <select id="city" required>
@@ -500,12 +508,16 @@
  <option value="Diğer">Diğer</option>
  </select>
  </div>
+ 
+ <!-- Proje Adı -->
  <div class="form-group">
  <label>Proje Adı *</label>
- <input type="text" id="projectName" placeholder="Örn: Halfeti Baraj Projesi" required>
+ <input type="text" id="projectName" required>
  </div>
+ 
+ <!-- Süre -->
  <div class="form-group">
- <label>Kiralama Süresi *</label>
+ <label>Süre *</label>
  <select id="duration" required>
  <option value="">Seçiniz...</option>
  <option value="Saatlik">Saatlik</option>
@@ -515,6 +527,8 @@
  <option value="Uzun Vade">Uzun Vade</option>
  </select>
  </div>
+ 
+ <!-- Operatör Durumu -->
  <div class="form-group">
  <label>Kiralama Şekli *</label>
  <select id="operatorType" required>
@@ -522,11 +536,11 @@
  <option value="Operatörsüz">Operatörsüz</option>
  </select>
  </div>
+ 
  <button type="submit" class="submit-btn">WhatsApp'tan Gönder</button>
  </form>
  </div>
  </div>
 
  <!-- Sticky WhatsApp -->
- <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." class="sticky-wa" title="WhatsApp'tan Yazın">
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+ <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." class="stick
