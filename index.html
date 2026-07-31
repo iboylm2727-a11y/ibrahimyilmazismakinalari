@@ -15,334 +15,110 @@
  --whatsapp-green: #25D366;
  }
 
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
-
- body {
- background-color: var(--light-grey);
- color: var(--text-dark);
- line-height: 1.6;
- }
-
+ * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+ body { background-color: var(--light-grey); color: var(--text-dark); line-height: 1.6; }
  a { text-decoration: none; color: inherit; }
  ul { list-style: none; }
 
  /* Header */
- header {
- background-color: var(--dark-black);
- color: var(--text-white);
- padding: 1rem 0;
- position: sticky;
- top: 0;
- z-index: 1000;
- box-shadow: 0 2px 10px rgba(0,0,0,0.3);
- border-bottom: 4px solid var(--primary-yellow);
- }
-
- .container {
- width: 90%;
- max-width: 1200px;
- margin: auto;
- display: flex;
- justify-content: space-between;
- align-items: center;
- }
-
- .logo h1 {
- font-size: 1.4rem;
- font-weight: 800;
- color: var(--primary-yellow);
- text-transform: uppercase;
- line-height: 1.2;
- }
-
- .logo span {
- display: block;
- font-size: 0.9rem;
- color: #fff;
- font-weight: 400;
- letter-spacing: 1px;
- }
-
- nav ul {
- display: flex;
- gap: 20px;
- }
-
- nav ul li a {
- color: #fff;
- font-weight: 600;
- transition: color 0.3s;
- text-transform: uppercase;
- font-size: 0.9rem;
- }
-
- nav ul li a:hover {
- color: var(--primary-yellow);
- }
+ header { background-color: var(--dark-black); color: var(--text-white); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); border-bottom: 4px solid var(--primary-yellow); }
+ .container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+ .logo h1 { font-size: 1.4rem; font-weight: 800; color: var(--primary-yellow); text-transform: uppercase; line-height: 1.2; }
+ .logo span { display: block; font-size: 0.9rem; color: #fff; font-weight: 400; letter-spacing: 1px; }
+ nav ul { display: flex; gap: 20px; }
+ nav ul li a { color: #fff; font-weight: 600; transition: color 0.3s; text-transform: uppercase; font-size: 0.9rem; }
+ nav ul li a:hover { color: var(--primary-yellow); }
 
  /* Hero */
- .hero {
- background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
- background-size: cover;
- background-position: center;
- height: 85vh;
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
- color: #fff;
- padding: 0 20px;
- }
-
- .hero-content h2 {
- font-size: 3rem;
- font-weight: 900;
- margin-bottom: 1rem;
- text-transform: uppercase;
- color: var(--primary-yellow);
- text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
- }
-
- .hero-content p {
- font-size: 1.3rem;
- margin-bottom: 2rem;
- max-width: 800px;
- margin-left: auto;
- margin-right: auto;
- }
-
- .cta-btn {
- display: inline-block;
- background-color: var(--primary-yellow);
- color: var(--dark-black);
- padding: 15px 40px;
- font-size: 1.2rem;
- font-weight: bold;
- border-radius: 5px;
- transition: all 0.3s;
- text-transform: uppercase;
- }
-
- .cta-btn:hover {
- background-color: #fff;
- transform: scale(1.05);
- }
+ .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 20px; }
+ .hero-content h2 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; text-transform: uppercase; color: var(--primary-yellow); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+ .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+ .cta-btn { display: inline-block; background-color: var(--primary-yellow); color: var(--dark-black); padding: 15px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 5px; transition: all 0.3s; text-transform: uppercase; }
+ .cta-btn:hover { background-color: #fff; transform: scale(1.05); }
 
  /* Section */
- section {
- padding: 4rem 0;
- }
+ section { padding: 4rem 0; }
+ .section-title { text-align: center; margin-bottom: 3rem; }
+ .section-title h3 { font-size: 2.2rem; color: var(--dark-black); text-transform: uppercase; position: relative; display: inline-block; margin-bottom: 10px; }
+ .section-title h3::after { content: ''; display: block; width: 80px; height: 4px; background-color: var(--primary-yellow); margin: 10px auto 0; }
 
- .section-title {
- text-align: center;
- margin-bottom: 3rem;
- }
-
- .section-title h3 {
- font-size: 2.2rem;
- color: var(--dark-black);
- text-transform: uppercase;
- position: relative;
- display: inline-block;
- margin-bottom: 10px;
- }
-
- .section-title h3::after {
- content: '';
- display: block;
- width: 80px;
- height: 4px;
- background-color: var(--primary-yellow);
- margin: 10px auto 0;
- }
-
- /* Makine Parkuru Görselleri */
- .machines-section {
- background-color: #fff;
- }
-
- .machine-gallery {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 20px;
- width: 90%;
- max-width: 1200px;
- margin: auto;
- }
-
- .machine-card {
- overflow: hidden;
- border-radius: 8px;
- box-shadow: 0 4px 10px rgba(0,0,0,0.1);
- }
-
- .machine-card img {
- width: 100%;
- height: auto;
- display: block;
- }
-
- .card-info {
- padding: 15px;
- background: var(--light-grey);
- text-align: center;
- }
-
- .card-info h4 {
- color: var(--dark-black);
- font-size: 1.1rem;
- }
+ /* Makine Parkuru */
+ .machines-section { background-color: #fff; }
+ .machine-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; width: 90%; max-width: 1200px; margin: auto; }
+ .machine-card { overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+ .machine-card img { width: 100%; height: auto; display: block; }
+ .card-info { padding: 15px; background: var(--light-grey); text-align: center; }
+ .card-info h4 { color: var(--dark-black); font-size: 1.1rem; }
+ .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 90%; max-width: 1200px; margin: auto; margin-top: 30px; }
+ .card { background: var(--light-grey); padding: 20px; border-radius: 8px; text-align: center; border-left: 5px solid var(--primary-yellow); transition: transform 0.3s; }
+ .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+ .card h4 { font-size: 1.1rem; color: var(--dark-black); }
 
  /* Hizmetler */
- .services-section {
- background-color: var(--dark-grey);
- color: #fff;
- }
+ .services-section { background-color: var(--dark-grey); color: #fff; }
+ .services-section .section-title h3 { color: #fff; }
+ .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 90%; max-width: 1200px; margin: auto; }
+ .service-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 5px; text-align: center; font-weight: 600; border: 1px solid var(--primary-yellow); }
 
- .services-section .section-title h3 {
- color: #fff;
- }
+ /* Neden Biz - GÜNCELLENDİ */
+ .why-us-section { background-color: #fff; }
+ .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; width: 90%; max-width: 1200px; margin: auto; }
+ .feature-box { text-align: center; padding: 25px; background: #f9f9f9; border-radius: 10px; border: 1px solid #eee; transition: transform 0.3s; }
+ .feature-box:hover { transform: translateY(-5px); border-color: var(--primary-yellow); }
+ .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+ .feature-box h4 { margin-bottom: 10px; color: var(--dark-black); font-size: 1.2rem; }
+ .feature-box p { color: #666; font-size: 0.95rem; }
 
- .service-list {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- gap: 15px;
- width: 90%;
- max-width: 1200px;
- margin: auto;
- }
+ /* İletişim - GÜNCELLENDİ */
+ .contact-section { background-color: var(--dark-black); color: #fff; text-align: center; padding: 5rem 0; }
+ .contact-info { font-size: 1.2rem; margin-bottom: 2rem; }
+ .contact-info p { margin: 10px 0; }
+ .contact-info strong { color: var(--primary-yellow); font-size: 1.5rem; }
 
- .service-item {
- background: rgba(255,255,255,0.1);
- padding: 15px;
- border-radius: 5px;
- text-align: center;
- font-weight: 600;
- border: 1px solid var(--primary-yellow);
- }
-
- /* Neden Biz */
- .why-us-section {
- background-color: #fff;
- }
-
- .features-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- gap: 20px;
- width: 90%;
- max-width: 1200px;
- margin: auto;
- }
-
- .feature-box {
- text-align: center;
- padding: 20px;
- }
-
- .feature-icon {
- font-size: 2rem;
- color: var(--primary-yellow);
- margin-bottom: 10px;
- }
-
- .feature-box h4 {
- margin-bottom: 5px;
- color: var(--dark-black);
- }
-
- /* İletişim */
- .contact-section {
- background-color: var(--dark-black);
- color: #fff;
- text-align: center;
- padding: 4rem 0;
- }
-
- .contact-info {
- font-size: 1.2rem;
- margin-bottom: 2rem;
- }
-
- .contact-info p {
- margin: 10px 0;
- }
-
- .contact-info strong {
- color: var(--primary-yellow);
- font-size: 1.4rem;
- }
-
- .whatsapp-btn-large {
+ /* Akıllı Makine Seçim Butonu */
+ .smart-wa-btn {
  background-color: var(--whatsapp-green);
  color: white;
- padding: 15px 30px;
+ padding: 20px 40px;
  border-radius: 50px;
  font-weight: bold;
- font-size: 1.1rem;
+ font-size: 1.3rem;
  display: inline-flex;
+ flex-direction: column;
  align-items: center;
  gap: 10px;
- transition: transform 0.3s;
+ box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+ transition: all 0.3s;
+ max-width: 500px;
+ margin: 0 auto;
+ cursor: pointer;
+ border: 2px solid transparent;
  }
-
- .whatsapp-btn-large:hover {
+ .smart-wa-btn:hover {
  transform: scale(1.05);
  background-color: #128C7E;
+ border-color: #fff;
  }
+ .smart-wa-text { font-size: 1.1rem; opacity: 0.9; }
+ .smart-wa-sub { font-size: 0.9rem; font-weight: normal; opacity: 0.8; }
 
  /* Footer */
- footer {
- background-color: #000;
- color: #777;
- text-align: center;
- padding: 1.5rem 0;
- font-size: 0.9rem;
- }
+ footer { background-color: #000; color: #777; text-align: center; padding: 1.5rem 0; font-size: 0.9rem; }
 
  /* Sticky WhatsApp */
- .sticky-wa {
- position: fixed;
- bottom: 25px;
- right: 25px;
- background-color: var(--whatsapp-green);
- color: white;
- width: 60px;
- height: 60px;
- border-radius: 50%;
- display: flex;
- align-items: center;
- justify-content: center;
- box-shadow: 0 4px 15px rgba(0,0,0,0.3);
- z-index: 2000;
- transition: transform 0.3s;
- }
-
- .sticky-wa:hover {
- transform: scale(1.1);
- }
-
- .sticky-wa svg {
- width: 35px;
- height: 35px;
- fill: white;
- }
+ .sticky-wa { position: fixed; bottom: 25px; right: 25px; background-color: var(--whatsapp-green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 2000; transition: transform 0.3s; }
+ .sticky-wa:hover { transform: scale(1.1); }
+ .sticky-wa svg { width: 35px; height: 35px; fill: white; }
 
  /* Mobil */
  @media (max-width: 768px) {
  .hero-content h2 { font-size: 2rem; }
  .hero-content p { font-size: 1rem; }
- 
  .container { flex-direction: column; gap: 15px; }
  nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
- 
  .logo h1 { font-size: 1.1rem; }
  .logo span { font-size: 0.8rem; }
+ .smart-wa-btn { width: 100%; padding: 15px 20px; }
  }
  </style>
 </head>
@@ -371,76 +147,103 @@
  <div class="hero-content">
  <h2>Türkiye'nin Her Yerine Profesyonel<br>Hafriyat ve İş Makinaları Kiralama</h2>
  <p>Gaziantep merkezli, Türkiye geneli güvenilir çözümler.</p>
- <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." class="cta-btn">Hemen Teklif Al</a>
+ <a href="#contact" class="cta-btn">Hemen Teklif Al</a>
  </div>
  </section>
 
- <!-- Makine Parkuru + Fotoğraflar -->
+ <!-- Makine Parkuru -->
  <section id="machines" class="machines-section">
  <div class="section-title">
  <h3>🚜 Makine Parkurumuz</h3>
  <p>Projeniz için en uygun makineyi seçin.</p>
  </div>
- 
- <!-- Örnek Fotoğraflar -->
  <div class="machine-gallery">
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image.png" alt="Ekskavatör" />
- <div class="card-info"><h4>Ekskavatör & Yükleyici</h4></div>
+ <div class="machine-card"><img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image.png" alt="Ekskavatör" /><div class="card-info"><h4>Ekskavatör & Yükleyici</h4></div></div>
+ <div class="machine-card"><img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(1).png" alt="Makine Filosu" /><div class="card-info"><h4>Geniş Makine Parkuru</h4></div></div>
+ <div class="machine-card"><img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(2).png" alt="Paletli Ekskavatör" /><div class="card-info"><h4>Paletli Ekskavatör</h4></div></div>
  </div>
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(1).png" alt="Makine Filosu" />
- <div class="card-info"><h4>Geniş Makine Parkuru</h4></div>
- </div>
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(2).png" alt="Paletli Ekskavatör" />
- <div class="card-info"><h4>Paletli Ekskavatör</h4></div>
- </div>
- </div>
-
- <!-- Makine Listesi -->
- <div class="grid-container" style="width:90%;max-width:1200px;margin:auto;margin-top:30px;">
- <div class="card"><h4>Paletli Ekskavatör</h4></div>
- <div class="card"><h4>Lastikli Ekskavatör</h4></div>
- <div class="card"><h4>Mini Ekskavatör</h4></div>
- <div class="card"><h4>Lastikli Yükleyici (Loder)</h4></div>
- <div class="card"><h4>Bekoloder</h4></div>
- <div class="card"><h4>Mini Yükleyici (Bobcat)</h4></div>
- <div class="card"><h4>Damperli Kamyon</h4></div>
- <div class="card"><h4>Lowbed</h4></div>
- <div class="card"><h4>Manitou</h4></div>
- <div class="card"><h4>Mobil Vinç</h4></div>
- <div class="card"><h4>Sepetli Platform</h4></div>
- <div class="card"><h4>Greyder</h4></div>
- <div class="card"><h4>Silindir</h4></div>
- <div class="card"><h4>Dozer</h4></div>
- <div class="card"><h4>Arazöz</h4></div>
+ <div class="grid-container">
+ <div class="card"><h4>Paletli Ekskavatör</h4></div><div class="card"><h4>Lastikli Ekskavatör</h4></div><div class="card"><h4>Mini Ekskavatör</h4></div>
+ <div class="card"><h4>Lastikli Yükleyici (Loder)</h4></div><div class="card"><h4>Bekoloder</h4></div><div class="card"><h4>Mini Yükleyici (Bobcat)</h4></div>
+ <div class="card"><h4>Damperli Kamyon</h4></div><div class="card"><h4>Lowbed</h4></div><div class="card"><h4>Manitou</h4></div>
+ <div class="card"><h4>Mobil Vinç</h4></div><div class="card"><h4>Sepetli Platform</h4></div><div class="card"><h4>Greyder</h4></div>
+ <div class="card"><h4>Silindir</h4></div><div class="card"><h4>Dozer</h4></div><div class="card"><h4>Arazöz</h4></div>
  </div>
  </section>
 
  <!-- Hizmetler -->
  <section id="services" class="services-section">
- <div class="section-title">
- <h3>🏗️ Hizmetlerimiz</h3>
- </div>
+ <div class="section-title"><h3>🏗️ Hizmetlerimiz</h3></div>
  <div class="service-list">
- <div class="service-item">Hafriyat</div>
- <div class="service-item">Kazı</div>
- <div class="service-item">Dolgu</div>
- <div class="service-item">Yıkım</div>
- <div class="service-item">Yol Yapımı</div>
- <div class="service-item">Altyapı</div>
- <div class="service-item">Şantiye Hizmetleri</div>
- <div class="service-item">Operatörlü Kiralama</div>
- <div class="service-item">Günlük / Haftalık / Aylık Kiralama</div>
- <div class="service-item">Makine Nakliyesi</div>
+ <div class="service-item">Hafriyat</div><div class="service-item">Kazı</div><div class="service-item">Dolgu</div>
+ <div class="service-item">Yıkım</div><div class="service-item">Yol Yapımı</div><div class="service-item">Altyapı</div>
+ <div class="service-item">Şantiye Hizmetleri</div><div class="service-item">Operatörlü Kiralama</div>
+ <div class="service-item">Günlük / Haftalık / Aylık Kiralama</div><div class="service-item">Makine Nakliyesi</div>
  </div>
  </section>
 
- <!-- Neden Biz -->
+ <!-- Neden Biz - GÜNCELLENDİ -->
  <section id="why-us" class="why-us-section">
- <div class="section-title">
- <h3>⭐ Neden Biz?</h3>
- </div>
+ <div class="section-title"><h3>⭐ Neden Bizi Tercih Etmelisiniz?</h3></div>
  <div class="features-grid">
-     
+ <div class="feature-box">
+ <div class="feature-icon">🤝</div>
+ <h4>Güvenilir Ortaklık</h4>
+ <p>Yılların verdiği tecrübe ile projenizin her aşamasında yanınızdayız.</p>
+ </div>
+ <div class="feature-box">
+ <div class="feature-icon">⏱️</div>
+ <h4>Zamanında Teslimat</h4>
+ <p>Söz verdiğimiz saatte, söz verdiğimiz yerde makinemiz hazır.</p>
+ </div>
+ <div class="feature-box">
+ <div class="feature-icon">🔧</div>
+ <h4>Bakımlı & Sağlam Makineler</h4>
+ <p>Araçlarımız düzenli bakımdan geçmiş, arıza riski minimum seviyededir.</p>
+ </div>
+ <div class="feature-box">
+ <div class="feature-icon">👷</div>
+ <h4>Deneyimli Operatörler</h4>
+ <p>Alanında uzman operatörlerimizle işinizi hızlandırıyoruz.</p>
+ </div>
+ <div class="feature-box">
+ <div class="feature-icon">🇹🇷</div>
+ <h4>Türkiye Geneli Hizmet</h4>
+ <p>Gaziantep merkezli olarak tüm Türkiye'de hizmet veriyoruz.</p>
+ </div>
+ <div class="feature-box">
+ <div class="feature-icon">💰</div>
+ <h4>Rekabetçi Fiyatlar</h4>
+ <p>Bütçenize uygun, şeffaf ve ekonomik teklifler sunuyoruz.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- İletişim - GÜNCELLENDİ (Akıllı Buton) -->
+ <section id="contact" class="contact-section">
+ <div class="section-title"><h3 style="color:#fff;">📞 Hemen Teklif Alın</h3></div>
+ <div class="contact-info">
+ <p><strong>Adres:</strong> Gaziantep / Türkiye</p>
+ <p><strong>Telefon:</strong> <a href="tel:+905462182726" style="color:var(--primary-yellow);">0546 218 27 26</a></p>
+ </div>
+
+ <!-- Akıllı WhatsApp Butonu -->
+ <a href="https://wa.me/905462182726?text=Merhaba,%20makine%20kiralamak%20istiyorum.%20Lütfen%20aşağıdaki%20listeden%20ilgilenmediğim%20makineyi%20seçin:%0A%0A🚜%20Ekskavatör%20(Paletli)%0A🚜%20Lastikli%20Ekskavatör%0A🚜%20Mini%20Ekskavatör%0A🚜%20Lastikli%20Yükleyici%20(Loder)%0A🚜%20Bekoloder%0A🚜%20Mini%20Yükleyici%20(Bobcat)%0A🚛%20Damperli%20Kamyon%0A🚛%20Lowbed%0A🚜%20Manitou%0A🏗️%20Mobil%20Vinç%0A🏗️%20Sepetli%20Platform%0A🚜%20Greyder%0A🚜%20Silindir%0A🚜%20Dozer%0A💧%20Arazöz%0A%0AHangi%20makineye%20ihtiyacım%20var?" class="smart-wa-btn">
+ <span style="font-size:1.5rem;">🚜 Makine Kiralamak İstiyorum</span>
+ <span class="smart-wa-sub">Listeden ihtiyacınız olan makineyi seçin, anında fiyat alın!</span>
+ </a>
+ </section>
+
+ <!-- Footer -->
+ <footer>
+ <p>&copy; 2026 İbrahim Yılmaz Hafriyat & İş Makinaları Kiralama. Tüm hakları saklıdır.</p>
+ </footer>
+
+ <!-- Sticky WhatsApp -->
+ <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." class="sticky-wa" title="WhatsApp'tan Yazın">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+ </a>
+
+</body>
+                                                                           </html>
+                                                                                                                                                                                                                      
