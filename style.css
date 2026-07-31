@@ -1,1 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    border-bottom:4px solid #f7c600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo h1{
+    color:#f7c600;
+    font-size:34px;
+}
+
+.logo p{
+    color:#fff;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#f7c600;
+}
+
+#anasayfa{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero{
+    max-width:900px;
+}
+
+.hero h2{
+    font-size:52px;
+    color:#f7c600;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:16px 35px;
+    background:#f7c600;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h2{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+}
+}
