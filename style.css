@@ -143,3 +143,10 @@ section{
 #makinalar{
     padding-top:100px;
 }
+#makinalar{
+    margin-top:120px !important;
+}
+
+#makinalar .bolum{
+    margin-top:50px;
+}
