@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    color:#222;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-bottom:4px solid #f5b400;
+}
+
+.logo h1{
+    color:#f5b400;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 15px;
+}
+
+.hero{
+    max-width:1000px;
+    margin:auto;
+    min-height:350px;
+    padding:80px 20px;
+    text-align:center;
+    color:white;
+    border-radius:20px;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    color:#f5b400;
+    font-size:35px;
+}
+
+.btn,button{
+    background:#f5b400;
+    color:#111;
+    padding:14px 25px;
+    border-radius:10px;
+    border:none;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    margin:10px;
+}
+
+.bolum{
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+}
+
+.kartlar{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.kart{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    border-top:5px solid #f5b400;
+    box-shadow:0 5px 15px #ccc;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:120px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
