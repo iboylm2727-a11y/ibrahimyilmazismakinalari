@@ -190,5 +190,10 @@ footer{
     text-align:center;
     padding:30px;
     margin-top:40px;
-
+.hizmetler{
+    margin-top:25px;
+    color:#f5b400;
+    font-size:18px;
+    font-weight:bold;
+}
 }
