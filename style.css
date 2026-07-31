@@ -1,191 +1,103 @@
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#111;
-    color:#fff;
+    margin:0;
+    background:#f2f2f2;
+    color:#222;
 }
 
 header{
-    background:#000;
-    border-bottom:4px solid #f7c600;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    position:sticky;
-    top:0;
-    z-index:999;
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
 .logo h1{
-    color:#f7c600;
-    font-size:34px;
-}
-
-.logo p{
-    color:#fff;
-    font-size:14px;
-    letter-spacing:2px;
-}
-
-nav{
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#f7c600;
-}
-
-#anasayfa{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-    background:
-        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-.hero{
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-    background:#222;
-    border-radius:15px;
-    text-align:center;
-}
-
-.hero h2{
-    font-size:32px;
+    margin:0;
     color:#f5b400;
 }
 
-.hero p{
-    font-size:20px;
-    color:white;
-
-}
-
-.btn{
-    display:inline-block;
-    margin:10px;
-    padding:16px 35px;
-    background:#f7c600;
-    color:#000;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
-}
-
-.whatsapp{
-    background:#25D366;
-    color:#fff;
-}
-
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-    gap:15px;
+.logo p{
+    margin:5px;
 }
 
 nav{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero h2{
-    font-size:34px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.btn{
-    display:block;
-    width:100%;
-}
-}
-/* Teklif Formu Tasarımı */
-
-#teklif{
-    background:#181818;
-    padding:60px 20px;
-}
-
-form{
-    max-width:600px;
-    margin:auto;
-    background:#000;
-    padding:30px;
-    border-radius:15px;
-    border:2px solid #f7c600;
-}
-
-form label{
-    display:block;
-    color:#f7c600;
     margin-top:15px;
-    margin-bottom:5px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px;
     font-weight:bold;
 }
 
-form input,
-form select,
-form textarea{
-    width:100%;
-    padding:14px;
-    border-radius:8px;
-    border:none;
-    outline:none;
-    margin-bottom:10px;
-    font-size:16px;
+section{
+    padding:30px 15px;
 }
 
-form textarea{
-    height:120px;
-    resize:none;
-}
-
-form button{
-    width:100%;
-    padding:15px;
-    background:#25D366;
+.hero{
+    max-width:900px;
+    margin:auto;
+    background:#222;
     color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.hero h2{
+    color:#f5b400;
+    font-size:30px;
+}
+
+.bolum{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+h2{
+    text-align:center;
+    color:#111;
+}
+
+.kart{
+    background:#eee;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+}
+
+button,.btn{
+    display:inline-block;
+    background:#f5b400;
+    color:#111;
+    padding:12px 20px;
     border:none;
     border-radius:8px;
-    font-size:18px;
+    text-decoration:none;
     font-weight:bold;
     cursor:pointer;
 }
 
-form button:hover{
-    transform:scale(1.03);
-}
-.kart img{
+input,select,textarea{
     width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px;
+    padding:12px;
+    margin:8px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
