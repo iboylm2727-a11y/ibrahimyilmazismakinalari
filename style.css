@@ -5,20 +5,21 @@
 
 body{
     margin:0;
-    background:#f2f2f2;
+    background:#f3f3f3;
     color:#222;
 }
 
 header{
     background:#111;
     color:white;
-    padding:20px;
     text-align:center;
+    padding:20px;
 }
 
 .logo h1{
     margin:0;
     color:#f5b400;
+    font-size:32px;
 }
 
 .logo p{
@@ -36,13 +37,10 @@ nav a{
     font-weight:bold;
 }
 
-section{
-    padding:30px 15px;
-}
 
 .hero{
     max-width:900px;
-    margin:auto;
+    margin:30px auto;
     background:#222;
     color:white;
     padding:60px 20px;
@@ -55,37 +53,49 @@ section{
     font-size:30px;
 }
 
+
 .bolum{
     max-width:900px;
-    margin:auto;
+    margin:30px auto;
     background:white;
     padding:25px;
     border-radius:15px;
 }
 
+
 h2{
     text-align:center;
-    color:#111;
 }
+
+
+.kartlar{
+    max-width:900px;
+    margin:auto;
+}
+
 
 .kart{
     background:#eee;
     padding:20px;
     margin:15px 0;
+    border-left:5px solid #f5b400;
     border-radius:10px;
 }
 
-button,.btn{
+
+.btn,button{
     display:inline-block;
     background:#f5b400;
     color:#111;
     padding:12px 20px;
+    margin:10px;
     border:none;
     border-radius:8px;
     text-decoration:none;
     font-weight:bold;
     cursor:pointer;
 }
+
 
 input,select,textarea{
     width:100%;
@@ -95,9 +105,16 @@ input,select,textarea{
     border:1px solid #ccc;
 }
 
+
+textarea{
+    height:100px;
+}
+
+
 footer{
     background:#111;
     color:white;
     text-align:center;
     padding:20px;
+    margin-top:30px;
 }
