@@ -6,34 +6,39 @@
 }
 
 body{
-    background:#f4f4f4;
+    background:#f1f1f1;
     color:#222;
 }
+
 
 header{
     background:#111;
     color:white;
     padding:25px 15px;
     text-align:center;
+    border-bottom:4px solid #f5b400;
 }
+
 
 .logo h1{
     color:#f5b400;
-    font-size:32px;
+    font-size:34px;
 }
 
 .logo p{
-    margin-top:5px;
+    letter-spacing:2px;
 }
+
 
 nav{
     margin-top:20px;
 }
 
+
 nav a{
     color:white;
     text-decoration:none;
-    margin:8px;
+    margin:10px;
     font-weight:bold;
 }
 
@@ -44,31 +49,33 @@ section{
 
 
 .hero{
-    max-width:900px;
+    max-width:1000px;
+    min-height:350px;
     margin:auto;
+    padding:80px 25px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+
     background:
-    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122");
+
     background-size:cover;
     background-position:center;
-    color:white;
-    padding:80px 20px;
-    text-align:center;
-    border-radius:15px;
-}
 }
 
 
 .hero h2{
+    font-size:35px;
     color:#f5b400;
-    font-size:32px;
     margin-bottom:20px;
 }
 
 
 .hero p{
-    font-size:20px;
-    margin-bottom:25px;
+    font-size:22px;
+    margin-bottom:30px;
 }
 
 
@@ -76,10 +83,10 @@ section{
 button{
     background:#f5b400;
     color:#111;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
     border:none;
+    text-decoration:none;
     font-weight:bold;
     display:inline-block;
     margin:8px;
@@ -87,32 +94,43 @@ button{
 
 
 .bolum{
-    max-width:900px;
-    margin:40px auto;
+    max-width:1000px;
+    margin:auto;
     background:white;
-    padding:30px;
-    border-radius:15px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
 }
 
 
-h2{
+.bolum h2{
     text-align:center;
     margin-bottom:25px;
+    color:#111;
 }
 
 
 .kartlar{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
 }
 
 
 .kart{
     background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:12px;
-    border-left:6px solid #f5b400;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    border-top:5px solid #f5b400;
+}
+
+
+.kart h3{
+    margin-bottom:15px;
 }
 
 
@@ -126,11 +144,13 @@ form label{
 input,
 select,
 textarea{
+
     width:100%;
-    padding:12px;
-    margin-top:5px;
-    border-radius:8px;
+    padding:14px;
+    margin-top:6px;
+    border-radius:10px;
     border:1px solid #ccc;
+
 }
 
 
@@ -145,34 +165,4 @@ footer{
     text-align:center;
     padding:25px;
     margin-top:40px;
-}
-section{
-    margin-bottom:60px;
-}
-
-.hero{
-    margin-bottom:80px;
-}
-
-.bolum{
-    margin-top:40px;
-    margin-bottom:40px;
-}
-.kartlar{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.kart{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.kart:hover{
-    transform:translateY(-5px);
 }
