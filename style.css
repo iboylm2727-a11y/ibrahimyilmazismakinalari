@@ -121,3 +121,12 @@ footer{
 section{
     padding:40px 15px;
 }
+.hero{
+    max-width:900px;
+    margin:30px auto 50px auto;
+    background:#222;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:15px;
+}
