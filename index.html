@@ -6,13 +6,11 @@
  <title>İBRAHİM YILMAZ İŞ MAKİNALARİ KİRALAMA</title>
  <style>
  :root {
- --primary-gold: #f39c12; /* Altın Sarısı */
- --primary-hover: #d35400;
- --dark-black: #0a0a0a; /* Derin Siyah */
+ --primary-gold: #f39c12;
+ --dark-black: #0a0a0a;
  --dark-grey: #1c1c1c;
  --light-grey: #f5f5f5;
  --text-white: #ffffff;
- --text-dark: #333333;
  --whatsapp-green: #25D366;
  --call-blue: #007bff;
  }
@@ -22,7 +20,7 @@
  a { text-decoration: none; color: inherit; transition: 0.3s; }
  ul { list-style: none; }
 
- /* Header - Lüks & Şık */
+ /* Header */
  header { 
  background-color: rgba(10, 10, 10, 0.95); 
  backdrop-filter: blur(10px);
@@ -46,24 +44,13 @@
  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
  }
  nav ul { display: flex; gap: 25px; }
- nav ul li a { 
- color: #fff; 
- font-weight: 600; 
- font-size: 0.95rem; 
- text-transform: uppercase; 
- letter-spacing: 0.5px;
- position: relative;
- }
- nav ul li a::after {
- content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background-color: var(--primary-gold); transition: width 0.3s;
- }
- nav ul li a:hover::after { width: 100%; }
+ nav ul li a { color: #fff; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; }
  nav ul li a:hover { color: var(--primary-gold); }
 
- /* Hero Section - Gerçek Şantiye Atmosferi */
+ /* Hero - Gerçek Şantiye Görüntüsü */
  .hero { 
- /* Arka plan olarak Liebherr filosu görseli kullanılıyor (image (1).png) */
- background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(1).png');
+ /* Unsplash'ten gerçek bir iş sahası görseli */
+ background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80');
  background-size: cover; background-position: center; height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 20px; position: relative;
  }
  .hero-content h2 { 
@@ -94,7 +81,6 @@
  letter-spacing: 2px;
  }
  
- /* Büyük Teklif Butonu - Hızlı Satış */
  .cta-btn { 
  display: inline-block; 
  background: linear-gradient(45deg, var(--primary-gold), #f1c40f); 
@@ -122,7 +108,6 @@
  box-shadow: 0 0 50px rgba(255,255,255,0.8);
  }
 
- /* Section Genel */
  section { padding: 5rem 0; }
  .section-title { text-align: center; margin-bottom: 4rem; }
  .section-title h3 { 
@@ -144,47 +129,15 @@
  border-radius: 3px;
  }
 
- /* Makine Parkuru - Gerçek Fotoğraflarla */
+ /* Makine Listesi */
  .machines-section { background-color: #fff; }
- .machine-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; width: 90%; max-width: 1200px; margin: auto; }
- 
- .machine-card { 
- overflow: hidden; 
- border-radius: 15px; 
- box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
- transition: transform 0.4s; 
- position: relative;
- }
- .machine-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.25); }
- .machine-card img { 
- width: 100%; 
- height: 300px; 
- object-fit: cover; 
- display: block; 
- transition: transform 0.5s;
- }
- .machine-card:hover img { transform: scale(1.05); }
- 
- .card-info { 
- padding: 25px; 
- background: linear-gradient(to bottom, #fff, #f9f9f9); 
- text-align: center; 
- border-top: 5px solid var(--primary-gold);
- }
- .card-info h4 { 
- color: var(--dark-black); 
- font-size: 1.4rem; 
- font-weight: 800; 
- text-transform: uppercase;
- }
-
  .grid-container { 
  display: grid; 
  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
  gap: 20px; 
  width: 90%; 
  max-width: 1200px; 
- margin: 40px auto 0; 
+ margin: 0 auto; 
  }
  .card { 
  background: linear-gradient(145deg, #ffffff, #e6e6e6); 
@@ -197,14 +150,15 @@
  font-size: 1.05rem;
  transition: all 0.3s;
  color: var(--dark-black);
+ cursor: default;
  }
  .card:hover { 
  transform: translateY(-5px) scale(1.02); 
  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.25); 
- border-left-color: var(--primary-hover);
+ border-left-color: #d35400;
  }
 
- /* Neden Biz - Lüks Siyah Tema */
+ /* Neden Biz */
  .why-us-section { background-color: var(--dark-black); color: #fff; }
  .why-us-section .section-title h3 { color: #fff; }
  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; width: 90%; max-width: 1200px; margin: auto; }
@@ -226,7 +180,7 @@
  .feature-box h4 { margin-bottom: 15px; color: var(--primary-gold); font-size: 1.4rem; text-transform: uppercase; }
  .feature-box p { color: #ccc; font-size: 1.05rem; line-height: 1.6; }
 
- /* İletişim - Lüks Arka Plan */
+ /* İletişim */
  .contact-section { 
  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80'); 
  background-size: cover; 
@@ -287,7 +241,7 @@
  border-color: #fff;
  }
 
- /* Modal (Popup) - Lüks Form */
+ /* Modal (Popup) - TAM DÜZELTİLDİ */
  .modal {
  display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); backdrop-filter: blur(10px);
  }
@@ -337,7 +291,6 @@
 
  footer { background-color: #000; color: #888; text-align: center; padding: 2.5rem 0; font-size: 1rem; border-top: 4px solid var(--primary-gold); }
 
- /* Sticky WhatsApp */
  .sticky-wa { 
  position: fixed; 
  bottom: 35px; 
@@ -361,7 +314,6 @@
  }
  .sticky-wa svg { width: 42px; height: 42px; fill: white; }
 
- /* Mobil */
  @media (max-width: 768px) {
  .hero-content h2 { font-size: 2.2rem; }
  .hero-content p { font-size: 1.1rem; }
@@ -371,7 +323,6 @@
  .logo h1 { font-size: 1.1rem; }
  .contact-buttons { width: 100%; }
  .modal-content { width: 95%; margin: 15% auto; padding: 25px; }
- .machine-gallery { grid-template-columns: 1fr; }
  }
  </style>
 </head>
@@ -393,7 +344,7 @@
  </div>
  </header>
 
- <!-- Hero - Sizin Fotoğrafınız (Liebherr Filosu) -->
+ <!-- Hero - Gerçek Şantiye -->
  <section class="hero">
  <div class="hero-content">
  <h2>Türkiye'nin Her Yerinde<br>Güvenilir İş Makinesi Kiralama</h2>
@@ -402,31 +353,12 @@
  </div>
  </section>
 
- <!-- Makine Parkuru - Sizin Fotoğraflarınız -->
+ <!-- Makine Listesi -->
  <section id="machines" class="machines-section">
  <div class="section-title">
- <h3>🚜 Filomuz</h3>
+ <h3>🚜 Makine Parkurumuz</h3>
  <p style="font-size:1.2rem; color:#555; margin-top:10px;">Sahada çalışan, bakımlı ve hazır profesyonel makinelerimiz.</p>
  </div>
- <div class="machine-gallery">
- <!-- Komatsu Yükleyici -->
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image.png" alt="Komatsu Yükleyici" />
- <div class="card-info"><h4>Komatsu Yükleyici & Ekskavatör</h4></div>
- </div>
- <!-- Liebherr Filosu -->
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(1).png" alt="Liebherr Filosu" />
- <div class="card-info"><h4>Geniş Filo (Liebherr)</h4></div>
- </div>
- <!-- Hyundai Ekskavatör -->
- <div class="machine-card">
- <img src="https://github.com/iboylm2727/ibrahimyilmazismakinalari/raw/refs/heads/main/image%20(2).png" alt="Hyundai Ekskavatör" />
- <div class="card-info"><h4>Hyundai Paletli Ekskavatör</h4></div>
- </div>
- </div>
-
- <!-- Tüm Makine Listesi -->
  <div class="grid-container">
  <div class="card">Paletli Ekskavatör</div><div class="card">Lastikli Ekskavatör</div><div class="card">Mini Ekskavatör</div>
  <div class="card">Lastikli Yükleyici (Loder)</div><div class="card">Bekoloder</div><div class="card">Mini Yükleyici (Bobcat)</div>
@@ -436,7 +368,7 @@
  </div>
  </section>
 
- <!-- Neden Biz - Lüks Siyah Tema -->
+ <!-- Neden Biz -->
  <section id="why-us" class="why-us-section">
  <div class="section-title"><h3>⭐ Neden Bizi Tercih Etmelisiniz?</h3></div>
  <div class="features-grid">
@@ -487,7 +419,7 @@
  Hemen Ara
  </a>
  <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." class="btn-wa">
- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+ <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
  WhatsApp'tan Yaz
  </a>
  </div>
@@ -498,20 +430,23 @@
  <p>&copy; 2026 İBRAHİM YILMAZ İŞ MAKİNALARİ KİRALAMA | Türkiye Geneli Hizmet</p>
  </footer>
 
- <!-- Akıllı Teklif Formu (Modal) -->
+ <!-- Akıllı Teklif Formu (Modal) - TAMAMEN DÜZELTİLDİ -->
  <div id="quoteModal" class="modal">
  <div class="modal-content">
  <span class="close" onclick="closeModal()">&times;</span>
  <h2 style="text-align:center; color:var(--dark-black); margin-bottom:25px; font-weight:900;">Teklif İste</h2>
  <form id="whatsappForm" onsubmit="sendToWhatsapp(event)">
- <div class="form-group">
- <label>Konu *</label>
- <input type="text" id="subject" value="İş Makinesi Kiralama Teklifi" readonly required>
- </div>
+ 
  <div class="form-group">
  <label>Adınız Soyadınız *</label>
  <input type="text" id="name" placeholder="Örn: Ahmet Yılmaz" required>
  </div>
+
+ <div class="form-group">
+ <label>Telefon Numaranız *</label>
+ <input type="tel" id="phone" placeholder="05XX XXX XX XX" required>
+ </div>
+
  <div class="form-group">
  <label>Hangi Makineyi Kiralamak İstiyorsunuz? *</label>
  <select id="machine" required>
@@ -533,30 +468,81 @@
  <option value="Arazöz">Arazöz</option>
  </select>
  </div>
- <div class="form-group">
- <label>Kiralama Şekli *</label>
- <select id="operatorType" required>
- <option value="Operatörlü">Operatörlü</option>
- <option value="Operatörsüz">Operatörsüz</option>
- </select>
- </div>
- <div class="form-group">
- <label>Süre *</label>
- <select id="duration" required>
- <option value="Saatlik">Saatlik</option>
- <option value="Günlük">Günlük</option>
- <option value="Haftalık">Haftalık</option>
- <option value="Aylık">Aylık</option>
- </select>
- </div>
- <div class="form-group">
- <label>Proje Konumu / İlçe *</label>
- <input type="text" id="location" placeholder="Örn: Şanlıurfa, Halfeti" required>
- </div>
- <button type="submit" class="submit-btn">WhatsApp'tan Gönder</button>
- </form>
- </div>
- </div>
 
- <!-- Sticky WhatsApp -->
- <a href="https://wa.me/90
+ <div class="form-group">
+ <label>İli Seçiniz *</label>
+ <select id="city" required>
+ <option value="">Seçiniz...</option>
+ <option value="Adana">Adana</option>
+ <option value="Adıyaman">Adıyaman</option>
+ <option value="Afyonkarahisar">Afyonkarahisar</option>
+ <option value="Ağrı">Ağrı</option>
+ <option value="Amasya">Amasya</option>
+ <option value="Ankara">Ankara</option>
+ <option value="Antalya">Antalya</option>
+ <option value="Artvin">Artvin</option>
+ <option value="Aydın">Aydın</option>
+ <option value="Balıkesir">Balıkesir</option>
+ <option value="Bilecik">Bilecik</option>
+ <option value="Bingöl">Bingöl</option>
+ <option value="Bitlis">Bitlis</option>
+ <option value="Bolu">Bolu</option>
+ <option value="Burdur">Burdur</option>
+ <option value="Bursa">Bursa</option>
+ <option value="Çanakkale">Çanakkale</option>
+ <option value="Çankırı">Çankırı</option>
+ <option value="Çorum">Çorum</option>
+ <option value="Denizli">Denizli</option>
+ <option value="Diyarbakır">Diyarbakır</option>
+ <option value="Edirne">Edirne</option>
+ <option value="Elazığ">Elazığ</option>
+ <option value="Erzincan">Erzincan</option>
+ <option value="Erzurum">Erzurum</option>
+ <option value="Eskişehir">Eskişehir</option>
+ <option value="Gaziantep">Gaziantep</option>
+ <option value="Giresun">Giresun</option>
+ <option value="Gümüşhane">Gümüşhane</option>
+ <option value="Hakkari">Hakkari</option>
+ <option value="Hatay">Hatay</option>
+ <option value="Isparta">Isparta</option>
+ <option value="Mersin">Mersin</option>
+ <option value="İstanbul">İstanbul</option>
+ <option value="İzmir">İzmir</option>
+ <option value="Kars">Kars</option>
+ <option value="Kastamonu">Kastamonu</option>
+ <option value="Kayseri">Kayseri</option>
+ <option value="Kırklareli">Kırklareli</option>
+ <option value="Kırşehir">Kırşehir</option>
+ <option value="Kocaeli">Kocaeli</option>
+ <option value="Konya">Konya</option>
+ <option value="Kütahya">Kütahya</option>
+ <option value="Malatya">Malatya</option>
+ <option value="Manisa">Manisa</option>
+ <option value="Kahramanmaraş">Kahramanmaraş</option>
+ <option value="Mardin">Mardin</option>
+ <option value="Muğla">Muğla</option>
+ <option value="Muş">Muş</option>
+ <option value="Nevşehir">Nevşehir</option>
+ <option value="Niğde">Niğde</option>
+ <option value="Ordu">Ordu</option>
+ <option value="Rize">Rize</option>
+ <option value="Sakarya">Sakarya</option>
+ <option value="Samsun">Samsun</option>
+ <option value="Siirt">Siirt</option>
+ <option value="Sinop">Sinop</option>
+ <option value="Sivas">Sivas</option>
+ <option value="Tekirdağ">Tekirdağ</option>
+ <option value="Tokat">Tokat</option>
+ <option value="Trabzon">Trabzon</option>
+ <option value="Tunceli">Tunceli</option>
+ <option value="Şanlıurfa">Şanlıurfa</option>
+ <option value="Uşak">Uşak</option>
+ <option value="Van">Van</option>
+ <option value="Yozgat">Yozgat</option>
+ <option value="Zonguldak">Zonguldak</option>
+ <option value="Aksaray">Aksaray</option>
+ <option value="Bayburt">Bayburt</option>
+ <option value="Karaman">Karaman</option>
+ <option value="Kırıkkale">Kırıkkale</option>
+ <option value="Batman">Batman</option>
+ <option value="Şırnak">Şırnak</option
