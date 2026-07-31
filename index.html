@@ -40,7 +40,7 @@
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
             color: #fff;
             text-transform: uppercase;
@@ -51,7 +51,7 @@
             color: #ffb400;
         }
 
-        /* HERO SECTION (ARKA PLAN) */
+        /* HERO SECTION (İŞ MAKİNESİ ARKA PLANLI) */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -60,7 +60,6 @@
             justify-content: center;
             text-align: center;
             padding: 0 20px;
-            /* Yüksek kaliteli iş makinesi arka planı */
             background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
                         url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
         }
@@ -84,7 +83,7 @@
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -102,7 +101,7 @@
             line-height: 1.6;
         }
 
-        /* ÖZEL TASARIM BUTONLAR */
+        /* ÖZEL ŞIK BUTONLAR */
         .btn-container {
             display: flex;
             gap: 20px;
@@ -114,7 +113,7 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            padding: 16px 36px;
+            padding: 16px 32px;
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
@@ -122,7 +121,6 @@
             transition: all 0.3s ease;
             cursor: pointer;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .btn-primary {
@@ -134,7 +132,6 @@
         .btn-primary:hover {
             transform: translateY(-4px);
             box-shadow: 0 15px 30px rgba(255, 180, 0, 0.5);
-            background: linear-gradient(135deg, #ffc42e 0%, #e6a100 100%);
         }
 
         .btn-whatsapp {
@@ -150,15 +147,15 @@
 
         /* MAKİNE PARKURU SEKTÖRÜ */
         .fleet-section {
-            padding: 100px 8%;
+            padding: 90px 8%;
             background-color: #181818;
             text-align: center;
         }
 
         .section-title {
-            font-size: 36px;
+            font-size: 34px;
             font-weight: 800;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .section-title span {
@@ -189,7 +186,7 @@
         .card:hover {
             transform: translateY(-8px);
             border-color: #ffb400;
-            box-shadow: 0 10px 30px rgba(255, 180, 0, 0.15);
+            box-shadow: 0 10px 30px rgba(255, 180, 0, 0.2);
         }
 
         .card-img {
@@ -223,7 +220,7 @@
             font-size: 14px;
         }
 
-        /* SABİT MOBİL İLETİŞİM ÇUBUĞU (TELEFONLAR İÇİN) */
+        /* MOBİL HIZLI ARAMA BUTONU */
         .floating-call {
             position: fixed;
             bottom: 20px;
@@ -240,11 +237,6 @@
             box-shadow: 0 10px 25px rgba(255, 180, 0, 0.5);
             z-index: 9999;
             text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .floating-call:hover {
-            transform: scale(1.1);
         }
 
         /* FOOTER */
@@ -257,17 +249,15 @@
             font-size: 14px;
         }
 
-        /* RESPONSIVE (MOBİL UYUMLULUK) */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 32px; }
-            .hero p { font-size: 15px; }
+            .hero h1 { font-size: 30px; }
             .btn { width: 100%; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- HEADER -->
     <header>
         <div class="logo">İBRAHİM YILMAZ <span>İŞ MAKİNALARI</span></div>
     </header>
@@ -276,61 +266,58 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-badge">
-                <i class="fa-solid fa-shield-halved"></i> Güvenilir & Kesintisiz Hizmet
+                <i class="fa-solid fa-shield-halved"></i> Güvenilir Hizmet
             </div>
             <h1>Ağır Projelerinize <span>Güçlü Saha Çözümleri</span></h1>
-            <p>Ekskavatörlerden çift çeker kamyon gruplarına, altyapı ve belediye projelerinden enerji santrallerine kadar her türlü saha çalışmasında güçlü parkurumuzla hizmetinizdeyiz.</p>
+            <p>Ekskavatör, yükleyici, çift çeker kamyon ve geniş makine parkurumuzla hafriyat, altyapı ve belediye projelerinizde hizmetinizdeyiz.</p>
             
             <div class="btn-container">
                 <a href="tel:05462182726" class="btn btn-primary">
                     <i class="fa-solid fa-phone"></i> Hemen Ara: 0546 218 27 26
                 </a>
-                <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20ve%20araç%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp'tan Yazın
+                <a href="https://wa.me/905462182726?text=Merhaba,%20iş%20makinası%20kiralama%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp İletişim
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- PARKUR SEKTÖRÜ -->
+    <!-- MAKİNE PARKURU -->
     <section class="fleet-section">
-        <h2 class="section-title">Geniş <span>İş Makinası & Filo Parkuru</span></h2>
+        <h2 class="section-title">Geniş <span>İş Makinası Parkuru</span></h2>
         <p class="section-subtitle">Sahanızın ihtiyacına özel yüksek performanslı araç çözümleri</p>
 
         <div class="grid-container">
-            <!-- Kart 1 -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" class="card-img" alt="Ekskavatör">
                 <div class="card-body">
                     <h3>Ekskavatör & Yükleyiciler</h3>
-                    <p>Ağır kazı, kanal, hafriyat ve saha temizleme işleri için yüksek tonajlı bakımlı ekskavatörler.</p>
+                    <p>Ağır kazı, hafriyat ve saha temizleme işleri için yüksek tonajlı makine parkuru.</p>
                     <a href="tel:05462182726" class="card-btn">Bilgi & Kiralama <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Kart 2 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=600&auto=format&fit=crop" class="card-img" alt="Çift Çeker Kamyon">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=600&auto=format&fit=crop" class="card-img" alt="Kamyon Filosu">
                 <div class="card-body">
                     <h3>Kırkayak & Çift Çeker Kamyonlar</h3>
-                    <p>Zorlu arazi şartlarında, santral ve hızlı tren projelerinde yüksek taşıma kapasiteli ticari araç filosu.</p>
+                    <p>Zorlu saha şartları ve taşıma projeleri için bakımlı ticari araç filosu.</p>
                     <a href="tel:05462182726" class="card-btn">Bilgi & Kiralama <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Kart 3 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" class="card-img" alt="Belediye ve Proje Araçları">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" class="card-img" alt="Proje Hizmetleri">
                 <div class="card-body">
-                    <h3>Proje & Belediye Araçları</h3>
-                    <p>Uzun veya kısa süreli taahhütlü projeler, santral ve belediye saha çalışmaları için tam donanımlı filolar.</p>
+                    <h3>Proje & Belediye Hizmetleri</h3>
+                    <p>Uzun veya kısa süreli taahhütlü projeler için güvenilir filo tedariki.</p>
                     <a href="tel:05462182726" class="card-btn">Bilgi & Kiralama <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SABİT HIZLI ARAMA BUTONU -->
+    <!-- SABİT ARAMA BUTTONU -->
     <a href="tel:05462182726" class="floating-call" title="Hemen Ara">
         <i class="fa-solid fa-phone"></i>
     </a>
@@ -341,5 +328,4 @@
     </footer>
 
 </body>
-            </html>
-            
+</html>
