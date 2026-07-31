@@ -216,4 +216,11 @@ footer{
 .avantaj h3{
     margin-bottom:15px;
 }
+}.iletisim-kutu{
+    text-align:center;
+    font-size:18px;
+}
+
+.iletisim-kutu p{
+    margin:15px;
 }
