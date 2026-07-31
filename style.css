@@ -1,0 +1,393 @@
+/* =======================
+   GENEL AYARLAR
+======================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+line-height:1.6;
+}
+
+/* =======================
+   ÜST BAR
+======================= */
+
+.ust-bar{
+background:#111;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 40px;
+font-size:14px;
+flex-wrap:wrap;
+}
+
+/* =======================
+   HEADER
+======================= */
+
+header{
+background:#f7c600;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo h1{
+font-size:34px;
+color:#111;
+}
+
+.logo p{
+font-size:16px;
+font-weight:bold;
+color:#333;
+margin-top:5px;
+}
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#fff;
+}
+
+/* =======================
+   HERO
+======================= */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+text-align:center;
+padding:120px 20px;
+color:#fff;
+}
+
+.hero h2{
+font-size:46px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+  /* =======================
+   MAKİNE KARTLARI
+======================= */
+
+.kartlar{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.kart{
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.35s;
+border-top:6px solid #f7c600;
+}
+
+.kart:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.20);
+}
+
+.kart h3{
+font-size:24px;
+color:#111;
+margin-bottom:15px;
+}
+
+.kart p{
+color:#666;
+font-size:16px;
+}
+
+/* =======================
+   HİZMETLER
+======================= */
+
+#hizmetler{
+background:#111;
+color:#fff;
+}
+
+#hizmetler h2{
+color:#f7c600;
+}
+
+#hizmetler .kart{
+background:#1d1d1d;
+color:#fff;
+border-top:5px solid #f7c600;
+}
+
+#hizmetler .kart h3{
+color:#f7c600;
+}
+
+#hizmetler .kart p{
+color:#ddd;
+}
+
+/* =======================
+   HAKKIMIZDA
+======================= */
+
+#hakkimizda{
+background:#fff;
+}
+
+#hakkimizda p{
+max-width:900px;
+margin:20px auto;
+font-size:18px;
+text-align:center;
+line-height:1.8;
+color:#555;
+}
+  /* =======================
+   TEKLİF FORMU
+======================= */
+
+#teklif{
+background:#f7f7f7;
+}
+
+form{
+max-width:700px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+form input,
+form select,
+form textarea{
+padding:16px;
+border:2px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+transition:.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+border-color:#f7c600;
+}
+
+form textarea{
+height:150px;
+resize:none;
+}
+
+form button{
+background:#f7c600;
+color:#111;
+padding:18px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:#111;
+color:#fff;
+}
+
+/* =======================
+   İLETİŞİM
+======================= */
+
+#iletisim{
+background:#111;
+color:#fff;
+text-align:center;
+}
+
+#iletisim h2{
+color:#f7c600;
+margin-bottom:20px;
+}
+
+#iletisim p{
+font-size:18px;
+margin:10px 0;
+}
+
+#iletisim a{
+display:inline-block;
+margin:10px;
+padding:14px 28px;
+background:#f7c600;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+}
+
+#iletisim a:hover{
+background:#fff;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:35px 20px;
+}
+
+footer h3{
+color:#f7c600;
+font-size:28px;
+margin-bottom:10px;
+}
+
+footer p{
+margin:8px 0;
+color:#ccc;
+  /* =======================
+   ANİMASYONLAR
+======================= */
+
+.hero,
+.kart,
+form,
+footer{
+animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* =======================
+   SCROLL BAR
+======================= */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#222;
+}
+
+::-webkit-scrollbar-thumb{
+background:#f7c600;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#d9a900;
+}
+
+/* =======================
+   MOBİL UYUMLULUK
+======================= */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+justify-content:center;
+margin-top:20px;
+}
+
+nav a{
+display:block;
+padding:8px;
+}
+
+.hero{
+padding:70px 20px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+section{
+padding:50px 20px;
+}
+
+.kartlar{
+grid-template-columns:1fr;
+}
+
+.ust-bar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+padding:15px;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+section h2{
+font-size:28px;
+}
+
+}
+}
