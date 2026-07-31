@@ -1,33 +1,33 @@
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
 
 body{
-    margin:0;
-    background:#f3f3f3;
+    background:#f4f4f4;
     color:#222;
 }
 
 header{
     background:#111;
     color:white;
+    padding:25px 15px;
     text-align:center;
-    padding:20px;
 }
 
 .logo h1{
-    margin:0;
     color:#f5b400;
     font-size:32px;
 }
 
 .logo p{
-    margin:5px;
+    margin-top:5px;
 }
 
 nav{
-    margin-top:15px;
+    margin-top:20px;
 }
 
 nav a{
@@ -38,33 +38,61 @@ nav a{
 }
 
 
+section{
+    padding:50px 15px;
+}
+
+
 .hero{
     max-width:900px;
-    margin:30px auto;
+    margin:auto;
     background:#222;
     color:white;
-    padding:60px 20px;
+    padding:70px 20px;
     text-align:center;
     border-radius:15px;
 }
 
+
 .hero h2{
     color:#f5b400;
-    font-size:30px;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+
+.btn,
+button{
+    background:#f5b400;
+    color:#111;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    border:none;
+    font-weight:bold;
+    display:inline-block;
+    margin:8px;
 }
 
 
 .bolum{
     max-width:900px;
-    margin:30px auto;
+    margin:40px auto;
     background:white;
-    padding:25px;
+    padding:30px;
     border-radius:15px;
 }
 
 
 h2{
     text-align:center;
+    margin-bottom:25px;
 }
 
 
@@ -75,39 +103,34 @@ h2{
 
 
 .kart{
-    background:#eee;
+    background:white;
     padding:20px;
-    margin:15px 0;
-    border-left:5px solid #f5b400;
-    border-radius:10px;
+    margin:20px 0;
+    border-radius:12px;
+    border-left:6px solid #f5b400;
 }
 
 
-.btn,button{
-    display:inline-block;
-    background:#f5b400;
-    color:#111;
-    padding:12px 20px;
-    margin:10px;
-    border:none;
-    border-radius:8px;
-    text-decoration:none;
+form label{
+    display:block;
+    margin-top:15px;
     font-weight:bold;
-    cursor:pointer;
 }
 
 
-input,select,textarea{
+input,
+select,
+textarea{
     width:100%;
     padding:12px;
-    margin:8px 0;
+    margin-top:5px;
     border-radius:8px;
     border:1px solid #ccc;
 }
 
 
 textarea{
-    height:100px;
+    height:120px;
 }
 
 
@@ -115,38 +138,6 @@ footer{
     background:#111;
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-section{
-    padding:40px 15px;
-}
-.hero{
-    max-width:900px;
-    margin:30px auto 50px auto;
-    background:#222;
-    color:white;
-    padding:60px 20px;
-    text-align:center;
-    border-radius:15px;
-#anasayfa{
-    margin-bottom:80px;
-}
-
-#makinalar{
-    margin-top:80px;
-}
-#anasayfa{
-    margin-bottom:100px;
-}
-
-#makinalar{
-    padding-top:100px;
-}
-#makinalar{
-    margin-top:120px !important;
-}
-
-#makinalar .bolum{
-    margin-top:50px;
+    padding:25px;
+    margin-top:40px;
 }
