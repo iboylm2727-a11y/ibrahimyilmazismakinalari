@@ -2,30 +2,32 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f1f1f1;
+    background:#f2f2f2;
     color:#222;
 }
 
+
+/* HEADER */
 
 header{
     background:#111;
     color:white;
     padding:25px 15px;
     text-align:center;
-    border-bottom:4px solid #f5b400;
+    border-bottom:5px solid #f5b400;
 }
 
-
 .logo h1{
+    font-size:36px;
     color:#f5b400;
-    font-size:34px;
 }
 
 .logo p{
+    font-size:16px;
     letter-spacing:2px;
 }
 
@@ -33,7 +35,6 @@ header{
 nav{
     margin-top:20px;
 }
-
 
 nav a{
     color:white;
@@ -43,53 +44,10 @@ nav a{
 }
 
 
+/* BÖLÜMLER */
+
 section{
-    padding:50px 15px;
-}
-
-
-.hero{
-    max-width:1000px;
-    min-height:350px;
-    margin:auto;
-    padding:80px 25px;
-    border-radius:20px;
-    text-align:center;
-    color:white;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122");
-
-    background-size:cover;
-    background-position:center;
-}
-
-
-.hero h2{
-    font-size:35px;
-    color:#f5b400;
-    margin-bottom:20px;
-}
-
-
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-
-.btn,
-button{
-    background:#f5b400;
-    color:#111;
-    padding:14px 25px;
-    border-radius:10px;
-    border:none;
-    text-decoration:none;
-    font-weight:bold;
-    display:inline-block;
-    margin:8px;
+    padding:60px 15px;
 }
 
 
@@ -99,23 +57,71 @@ button{
     background:white;
     padding:35px;
     border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 
-.bolum h2{
+h2{
     text-align:center;
     margin-bottom:25px;
-    color:#111;
 }
 
+
+/* ANA SAYFA */
+
+.hero{
+    max-width:1000px;
+    min-height:400px;
+    margin:auto;
+    padding:90px 25px;
+    text-align:center;
+    color:white;
+    border-radius:20px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122");
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+.hero h2{
+    color:#f5b400;
+    font-size:35px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px;
+}
+
+
+/* BUTON */
+
+.btn,
+button{
+    display:inline-block;
+    background:#f5b400;
+    color:#111;
+    padding:15px 25px;
+    border-radius:10px;
+    border:none;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+}
+
+
+/* MAKİNE KARTLARI */
 
 .kartlar{
     max-width:1000px;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 
@@ -124,7 +130,7 @@ button{
     padding:25px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
     border-top:5px solid #f5b400;
 }
 
@@ -133,6 +139,8 @@ button{
     margin-bottom:15px;
 }
 
+
+/* FORM */
 
 form label{
     display:block;
@@ -147,7 +155,7 @@ textarea{
 
     width:100%;
     padding:14px;
-    margin-top:6px;
+    margin-top:5px;
     border-radius:10px;
     border:1px solid #ccc;
 
@@ -159,10 +167,12 @@ textarea{
 }
 
 
+/* FOOTER */
+
 footer{
     background:#111;
     color:white;
     text-align:center;
-    padding:25px;
-    margin-top:40px;
+    padding:30px;
+    margin-top:50px;
 }
