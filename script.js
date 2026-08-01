@@ -1,11 +1,3 @@
-function toggleMenu(){
-
-const nav = document.querySelector("nav");
-
-nav.classList.toggle("active");
-
-}function toggleMenu(){
-
-document.querySelector("nav").classList.toggle("active");
-
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
 }
