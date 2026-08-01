@@ -1,69 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #f2f2f2;
-    color: #222;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 
-header {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-}
-
-header h1 {
-    font-size: 40px;
-}
-
-header h2 {
-    margin-top: 10px;
-    color: #f39c12;
+body{
+background:#f3f3f3;
+color:#222;
 }
 
 
-.hero {
-    text-align: center;
-    background: white;
-    padding: 50px 20px;
+
+header{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+position:sticky;
+top:0;
+z-index:10;
 }
 
 
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#f5a400;
 }
 
 
-.hero p {
-    font-size: 18px;
-    line-height: 1.6;
+
+.menu-btn{
+font-size:35px;
+cursor:pointer;
+display:none;
 }
 
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    background: #25D366;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
 }
 
 
-.machines {
-    padding: 40px 20px;
-    text-align: center;
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("kamyon.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+text-align:center;
+padding:100px 20px;
 }
 
 
-.machines h2 {
-    font
+
+.hero h1{
+font-size:40px;
+}
+
+
+
+.hero p{
+font-size:20px;
+margin:20px auto;
+max-width:700px;
+}
+
+
+
+.hero a{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
+
+.parkur{
+padding:50px 20px;
+text-align:center;
+}
+
+
+
+.parkur h2{
+font-size:35px;
+margin-bottom:30px;
+}
+
+
+
+.makinalar{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+
+
+.kart{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px #ccc;
+}
+
+
+
+.kart img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+
+
+.kart h3{
+padding:15px;
+font-size:22px;
+color:#d88700;
