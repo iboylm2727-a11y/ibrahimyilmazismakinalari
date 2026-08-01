@@ -523,3 +523,63 @@ font-size:22px;
 font-size:42px;
 margin-bottom:50px;
 }
+nav{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+
+.menu-toggle{
+display:none;
+cursor:pointer;
+font-size:30px;
+}@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#111;
+flex-direction:column;
+padding:20px;
+}
+
+nav.active{
+display:flex;
+  .teklif{
+padding:60px 20px;
+background:#111;
+}
+
+.teklif form{
+max-width:700px;
+margin:auto;
+background:#222;
+padding:30px;
+border-radius:15px;
+}
+
+.teklif h2{
+text-align:center;
+}
+
+.teklif label{
+display:block;
+margin:8px 0;
+}
+}
+
+}
