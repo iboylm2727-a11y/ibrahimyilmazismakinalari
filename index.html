@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,6 +9,9 @@
 <title>İBRAHİM YILMAZ | Hafriyat & İş Makinaları Kiralama</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -16,19 +20,36 @@
 
 <body>
 
-<a href="https://wa.me/905462182726" class="whatsapp-fixed" target="_blank">
-💬
-</a>
+<div class="topbar">
+
+📞 0546 218 2726 &nbsp;&nbsp; | &nbsp;&nbsp;
+
+💬 7/24 WhatsApp Destek &nbsp;&nbsp; | &nbsp;&nbsp;
+
+📍 Gaziantep / Türkiye
+
+</div>
 
 <header>
 
 <div class="logo">
-İBRAHİM YILMAZ
-<span>Hafriyat & İş Makinaları Kiralama</span>
+
+🚜
+
+<div>
+
+<h1>İBRAHİM YILMAZ</h1>
+
+<p>Hafriyat & İş Makinaları Kiralama</p>
+
+</div>
+
 </div>
 
 <div class="menu-toggle" onclick="toggleMenu()">
+
 ☰
+
 </div>
 
 <nav id="menu">
@@ -48,29 +69,28 @@
 </nav>
 
 </header>
-
 <section class="hero" id="anasayfa">
 
-<div class="overlay"></div>
+<div class="hero-overlay"></div>
 
-<div class="hero-text">
+<div class="hero-content">
 
-<h3>TÜRKİYE'NİN HER YERİNE</h3>
+<h4>TÜRKİYE'NİN HER YERİNE</h4>
 
 <h1>PROFESYONEL İŞ MAKİNALARI KİRALAMA</h1>
 
 <p>
-İBRAHİM YILMAZ HAFRİYAT & İŞ MAKİNALARI KİRALAMA
+İbrahim Yılmaz Hafriyat & İş Makinaları Kiralama olarak güçlü makine parkurumuz ve deneyimli operatörlerimiz ile Türkiye'nin her yerine hizmet veriyoruz.
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="tel:05462182726">
-📞 Hemen Ara
+<a href="#teklif" class="btn-yellow">
+💬 Hemen Teklif Al
 </a>
 
-<a href="https://wa.me/905462182726" target="_blank">
-💬 WhatsApp
+<a href="tel:05462182726" class="btn-dark">
+📞 Hemen Ara
 </a>
 
 </div>
@@ -78,7 +98,6 @@
 </div>
 
 </section>
-
 <section class="about" id="hakkimizda">
 
 <div class="container">
@@ -86,12 +105,37 @@
 <h2>Hakkımızda</h2>
 
 <p>
-İbrahim Yılmaz Hafriyat & İş Makinaları Kiralama olarak Gaziantep merkezli hizmet vermekte, Türkiye'nin her yerine profesyonel iş makinesi kiralama hizmeti sunuyoruz.
+İbrahim Yılmaz Hafriyat & İş Makinaları Kiralama olarak Gaziantep merkezli hizmet vermekteyiz.
+Türkiye'nin her yerine profesyonel iş makinesi kiralama hizmeti sunuyoruz.
 </p>
 
-<p>
-Güçlü makine parkurumuz ve deneyimli operatör kadromuz ile tüm projelerinizde yanınızdayız.
-</p>
+<div class="about-cards">
+
+<div class="about-card">
+🚜
+<h3>Geniş Makine Parkuru</h3>
+<p>Her projeye uygun modern ve bakımlı iş makineleri.</p>
+</div>
+
+<div class="about-card">
+👷
+<h3>Deneyimli Operatörler</h3>
+<p>Alanında uzman operatör kadrosu ile güvenli çalışma.</p>
+</div>
+
+<div class="about-card">
+⏰
+<h3>Zamanında Teslim</h3>
+<p>İş makinelerimiz belirtilen zamanda sahada olur.</p>
+</div>
+
+<div class="about-card">
+🇹🇷
+<h3>Türkiye Geneli Hizmet</h3>
+<p>Türkiye'nin tüm şehirlerine kiralama hizmeti.</p>
+</div>
+
+</div>
 
 </div>
 
@@ -102,105 +146,42 @@ Güçlü makine parkurumuz ve deneyimli operatör kadromuz ile tüm projeleriniz
 
 <h2>Makine Parkurumuz</h2>
 
-<div class="cards">
+<div class="machine-grid">
 
-<div class="card">
+<div class="machine-card">
 <img src="ekskavator.jpg" alt="Paletli Ekskavatör">
 <h3>Paletli Ekskavatör</h3>
+<p>✔ Operatörlü<br>✔ Bakımlı<br>✔ Hemen Teslim</p>
+<button onclick="secMakine('Paletli Ekskavatör')">
+💬 Bu Makine İçin Teklif Al
+</button>
 </div>
 
-<div class="card">
+<div class="machine-card">
 <img src="lastikli-ekskavator.jpg" alt="Lastikli Ekskavatör">
 <h3>Lastikli Ekskavatör</h3>
+<p>✔ Operatörlü<br>✔ Bakımlı<br>✔ Hemen Teslim</p>
+<button onclick="secMakine('Lastikli Ekskavatör')">
+💬 Bu Makine İçin Teklif Al
+</button>
 </div>
 
-<div class="card">
+<div class="machine-card">
 <img src="mini-ekskavator.jpg" alt="Mini Ekskavatör">
 <h3>Mini Ekskavatör</h3>
+<p>✔ Dar Alan Çalışmaları<br>✔ Operatörlü</p>
+<button onclick="secMakine('Mini Ekskavatör')">
+💬 Bu Makine İçin Teklif Al
+</button>
 </div>
 
-<div class="card">
-<img src="bekoloder.jpg" alt="Bekoloder">
-<h3>Bekoloder</h3>
-</div>
-
-<div class="card">
-<img src="loder.jpg" alt="Loder">
-<h3>Loder</h3>
-</div>
-
-<div class="card">
-<img src="manitou.jpg" alt="Manitou">
-<h3>Manitou</h3>
-</div>
-
-<div class="card">
-<img src="dozer.jpg" alt="Dozer">
-<h3>Dozer</h3>
-</div>
-
-<div class="card">
-<img src="greyder.jpg" alt="Greyder">
-<h3>Greyder</h3>
-</div>
-
-<div class="card">
-<img src="silindir.jpg" alt="Silindir">
-<h3>Silindir</h3>
-</div>
-
-<div class="card">
-<img src="arazoz.jpg" alt="Arazöz">
-<h3>Arazöz</h3>
-</div>
-
-<div class="card">
+<div class="machine-card">
 <img src="kamyon.jpg" alt="Damperli Kamyon">
 <h3>Damperli Kamyon</h3>
-</div>
-
-<div class="card">
-<img src="lowbed.jpg" alt="Lowbed">
-<h3>Lowbed</h3>
-</div>
-
-<div class="card">
-<img src="mobil-vinc.jpg" alt="Mobil Vinç">
-<h3>Mobil Vinç</h3>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="services" id="hizmetler">
-
-<div class="container">
-
-<h2>Hizmetlerimiz</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🚜 Hafriyat Çalışmaları</h3>
-<p>Kazı, dolgu ve hafriyat işleri.</p>
-</div>
-
-<div class="card">
-<h3>🏗️ Altyapı İşleri</h3>
-<p>Altyapı ve kanal çalışmaları.</p>
-</div>
-
-<div class="card">
-<h3>🛣️ Yol Yapımı</h3>
-<p>Yol yapımı ve zemin düzenleme.</p>
-</div>
-
-<div class="card">
-<h3>👷 Operatörlü Kiralama</h3>
-<p>Deneyimli operatörlerle güvenli hizmet.</p>
+<p>✔ Hafriyat Taşıma<br>✔ Günlük / Aylık</p>
+<button onclick="secMakine('Damperli Kamyon')">
+💬 Bu Makine İçin Teklif Al
+</button>
 </div>
 
 </div>
@@ -212,49 +193,52 @@ Güçlü makine parkurumuz ve deneyimli operatör kadromuz ile tüm projeleriniz
 
 <div class="container">
 
-<h2>Teklif Al</h2>
+<h2>Hemen Teklif Al</h2>
 
-<p>Bilgileri doldurun, size en kısa sürede WhatsApp üzerinden dönüş yapalım.</p>
+<p>Formu doldurun, size en kısa sürede WhatsApp üzerinden dönüş yapalım.</p>
 
 <form onsubmit="teklifGonder(); return false;">
 
 <input type="text" id="ad" placeholder="Ad Soyad" required>
 
-<input type="tel" id="telefon" placeholder="Telefon" required>
+<input type="tel" id="telefon" placeholder="Telefon Numaranız" required>
 
-<input type="text" id="konum" placeholder="Çalışma Yeri (İl / İlçe)" required>
+<input type="text" id="konum" placeholder="Çalışma Yapılacak İl / İlçe" required>
 
-<select id="makine" class="form-select">
+<select id="makine" required>
 <option value="">🚜 Makine Seçiniz</option>
 <option>Paletli Ekskavatör</option>
 <option>Lastikli Ekskavatör</option>
 <option>Mini Ekskavatör</option>
-<option>Bek
-  <section class="contact" id="iletisim">
+<option>Bekoloder</option>
+<option>Loder</option>
+<option>Manitou</option>
+<option>Dozer</option>
+<option>Greyder</option>
+<option>Silindir</option>
+<option>Arazöz</option>
+<option>Damperli Kamyon</option>
+<option>Lowbed</option>
+<option>Mobil Vinç</option>
+</select>
 
-<div class="container">
+<select id="sure" required>
+<option value="">⏳ Kiralama Süresi</option>
+<option>Uzun Süreli</option>
+<option>Aylık</option>
+<option>Haftalık</option>
+<option>Günlük</option>
+<option>Saatlik</option>
+</select>
 
-<h2>İletişim</h2>
+<textarea id="mesaj" placeholder="Mesajınız (İsteğe Bağlı)"></textarea>
 
-<p>📍 Gaziantep / Türkiye</p>
+<button type="submit">
+💬 WhatsApp'tan Teklif Al
+</button>
 
-<p>📞 0546 218 2726</p>
-
-<p>💬 WhatsApp: 0546 218 2726</p>
+</form>
 
 </div>
 
 </section>
-
-<footer>
-
-<p>© 2026 İBRAHİM YILMAZ Hafriyat & İş Makinaları Kiralama</p>
-
-</footer>
-<a href="tel:05462182726" class="call-fixed">
-📞
-</a>
-<script src="script.js"></script>
-
-</body>
-</html>
