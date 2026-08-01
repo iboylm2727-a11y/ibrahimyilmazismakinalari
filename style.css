@@ -423,7 +423,36 @@ font-size:14px;
 
 transition:.4s;
 
+}.menu-toggle{
+display:none;
+font-size:35px;
+color:#FFD400;
+cursor:pointer;
 }
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#080808;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+nav.active{
+display:flex;
+}
+
+  }
 
 
 .card:hover img{
