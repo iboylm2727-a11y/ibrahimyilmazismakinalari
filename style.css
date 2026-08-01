@@ -673,3 +673,37 @@ transition:.3s;
 .call-fixed:hover{
 transform:scale(1.1);
 }
+/* ===== GALERİ FOTOĞRAF DÜZENİ ===== */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+height:250px;
+overflow:hidden;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.08);
+}
+
+
+/* ===== MAKİNE FOTOĞRAFLARI ===== */
+
+.machine-card img{
+height:230px;
+width:100%;
+object-fit:cover;
+  }
