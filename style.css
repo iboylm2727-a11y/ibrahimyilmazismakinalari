@@ -368,3 +368,15 @@ grid-template-columns:1fr;
 }
 
 }
+.teklif button[type="submit"]{
+display:block !important;
+width:100%;
+background:#25D366 !important;
+color:white !important;
+padding:18px !important;
+font-size:20px !important;
+border-radius:12px;
+border:none;
+margin-top:25px;
+font-weight:bold;
+}
