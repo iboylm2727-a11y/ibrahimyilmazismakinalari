@@ -429,3 +429,34 @@ background:white;
 color:#111;
 display:block;
 }
+/* Makine kartlarını güzelleştir */
+
+.card{
+transition:0.35s;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:0.35s;
+}
+
+.card:hover img{
+transform:scale(1.05);
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+font-size:20px;
+font-weight:700;
+}
