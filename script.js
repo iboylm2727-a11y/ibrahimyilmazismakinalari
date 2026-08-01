@@ -1,44 +1,83 @@
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
+// HAMBURGER MENÜ
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
 }
-function teklifGonder() {
+
+
+
+// MAKİNE SEÇİNCE TEKLİF BÖLÜMÜNE GİT
+
+function secMakine(makineAdi){
+
+document.getElementById("makine").value = makineAdi;
+
+document.getElementById("teklif").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+
+// WHATSAPP TEKLİF GÖNDERME
+
+function teklifGonder(){
+
 
 let ad = document.getElementById("ad").value;
+
 let telefon = document.getElementById("telefon").value;
+
 let konum = document.getElementById("konum").value;
+
 let makine = document.getElementById("makine").value;
+
 let sure = document.getElementById("sure").value;
+
 let mesaj = document.getElementById("mesaj").value;
 
+
+
 let whatsappMesaj =
-`🚜 *YENİ KİRALAMA TALEBİ*
 
-👤 Ad Soyad: ${ad}
+`🚜 YENİ TEKLİF TALEBİ
 
-📞 Telefon: ${telefon}
+👤 Ad Soyad:
+${ad}
 
-📍 Çalışma Yeri: ${konum}
+📞 Telefon:
+${telefon}
 
-🚜 Makine: ${makine}
+📍 Çalışma Yeri:
+${konum}
 
-⏳ Kiralama Süresi: ${sure}
+🚜 Makine:
+${makine}
+
+⏳ Süre:
+${sure}
 
 📝 Mesaj:
-${mesaj}`;
+${mesaj}
 
-let url = "https://wa.me/905462182726?text=" + encodeURIComponent(whatsappMesaj);
+------------------
 
-window.open(url, "_blank");
+İBRAHİM YILMAZ
+Hafriyat & İş Makinaları Kiralama`;
 
-}
 
-function toggleMenu() {
-document.getElementById("menu").classList.toggle("active");
-}
 
-function secMakine(makineAdi) {
-document.getElementById("makine").value = makineAdi;
-document.getElementById("teklif").scrollIntoView({
-behavior: "smooth"
-});
+let link =
+
+"https://wa.me/905462182726?text=" 
++ encodeURIComponent(whatsappMesaj);
+
+
+
+window.open(link,"_blank");
+
+
 }
