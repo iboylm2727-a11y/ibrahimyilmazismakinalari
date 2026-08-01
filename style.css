@@ -707,3 +707,40 @@ height:230px;
 width:100%;
 object-fit:cover;
   }
+/* FOTOĞRAF TAM DÜZENLEME */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery-item{
+    width:100%;
+    height:220px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.gallery-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+
+/* Telefon görünümü */
+
+@media(max-width:768px){
+
+.gallery-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.gallery-item,
+.gallery-item img{
+    height:170px;
+}
+
+}
