@@ -474,3 +474,52 @@ transition:.3s;
 .teklif-btn:hover{
 transform:scale(1.05);
 }
+/* MAKİNE PARKURU YENİ TASARIM */
+
+.machines{
+background:#0b0b0b;
+}
+
+
+.machines .cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+
+.machines .card{
+background:#181818;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+transition:.3s;
+}
+
+
+.machines .card:hover{
+transform:translateY(-8px);
+}
+
+
+.machines .card img{
+width:100%;
+height:230px;
+object-fit:cover;
+display:block;
+}
+
+
+.machines .card h3{
+text-align:center;
+padding:20px;
+margin:0;
+color:#FFD400;
+font-size:22px;
+}
+
+
+.machines h2{
+font-size:42px;
+margin-bottom:50px;
+}
