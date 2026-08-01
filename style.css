@@ -497,3 +497,70 @@ grid-template-columns:1fr 1fr;
 
 
 }
+/* ANA SAYFA YENİ TASARIM */
+
+.hero{
+    height:80vh;
+    background:#111;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h3{
+    font-size:24px;
+    color:#f7b500;
+    letter-spacing:2px;
+}
+
+.hero-content h1{
+    font-size:48px;
+    line-height:1.2;
+    color:white;
+    margin:20px 0;
+}
+
+.hero-content p{
+    font-size:22px;
+    color:#ddd;
+    max-width:750px;
+    margin:auto;
+}
+
+
+/* BUTONLAR */
+
+.hero-buttons{
+    justify-content:center;
+    margin-top:35px;
+    gap:20px;
+}
+
+.hero-buttons a{
+    width:220px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:700;
+}
+
+
+/* LOGO */
+
+.logo h1{
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+.logo span{
+    font-size:14px;
+}
