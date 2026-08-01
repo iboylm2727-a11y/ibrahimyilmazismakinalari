@@ -1,5 +1,3 @@
-/* GENEL AYARLAR */
-
 *{
 margin:0;
 padding:0;
@@ -13,25 +11,33 @@ scroll-behavior:smooth;
 
 body{
 background:#111;
-color:#fff;
-overflow-x:hidden;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#f5c400;
 }
 
 a{
 text-decoration:none;
 color:white;
 }
-
-
-/* HEADER */
-
 header{
-width:100%;
-padding:25px 8%;
+height:80px;
+background:#0a0a0a;
 display:flex;
 align-items:center;
 justify-content:space-between;
-background:#080808;
+padding:0 5%;
 position:sticky;
 top:0;
 z-index:1000;
@@ -41,15 +47,15 @@ z-index:1000;
 .logo{
 font-size:28px;
 font-weight:800;
-color:#FFD400;
+color:#f5c400;
 }
 
 
 .logo span{
 display:block;
 font-size:13px;
-color:white;
 font-weight:400;
+color:white;
 }
 
 
@@ -61,45 +67,90 @@ gap:25px;
 
 nav a{
 font-size:16px;
-transition:.3s;
+font-weight:600;
 }
 
 
 nav a:hover{
-color:#FFD400;
+color:#f5c400;
 }
 
 
-/* HERO */
+.menu-toggle{
+display:none;
+font-size:32px;
+cursor:pointer;
+}
+@media(max-width:768px){
+
+header{
+padding:0 20px;
+}
+
+
+.logo{
+font-size:22px;
+}
+
+
+.menu-toggle{
+display:block;
+}
+
+
+nav{
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#0a0a0a;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+
+nav.active{
+display:flex;
+}
+
+
+nav a{
+padding:12px;
+}
+
+}
+
+
+/* ANA SAYFA */
 
 .hero{
-height:90vh;
+min-height:80vh;
 display:flex;
 align-items:center;
-padding:0 8%;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
-url("arkaplan.jpg");
-
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url("arka-plan.jpg");
 background-size:cover;
 background-position:center;
 }
 
 
 .hero-text{
-max-width:800px;
+width:90%;
+max-width:900px;
+margin:auto;
 }
 
 
 .hero h3{
-color:#FFD400;
+color:#f5c400;
 font-size:22px;
 }
 
 
 .hero h1{
-font-size:55px;
-line-height:1.2;
+font-size:50px;
 margin:20px 0;
 }
 
@@ -107,57 +158,49 @@ margin:20px 0;
 .hero p{
 font-size:20px;
 }
-/* BÖLÜMLER */
 
-section{
-padding:90px 8%;
-}
-
-
-.container{
-max-width:1200px;
-margin:auto;
-}
-
-
-h2{
-text-align:center;
-font-size:40px;
-color:#FFD400;
-margin-bottom:50px;
-}
-
-
-/* BUTONLAR */
 
 .buttons{
-display:flex;
-gap:20px;
 margin-top:30px;
+display:flex;
+gap:15px;
 }
 
 
 .buttons a{
-background:#FFD400;
-color:#111;
-padding:15px 30px;
-border-radius:8px;
+background:#f5c400;
+color:#000;
+padding:14px 25px;
+border-radius:10px;
 font-weight:700;
-transition:.3s;
+  
+}
+/* HAKKIMIZDA */
+
+.about,
+.machines,
+.services,
+.why,
+.teklif,
+.contact{
+padding:70px 0;
 }
 
 
-.buttons a:hover{
-transform:translateY(-5px);
+.about p{
+max-width:900px;
+margin:15px auto;
+line-height:1.8;
+text-align:center;
 }
 
 
-/* KARTLAR */
+/* MAKİNE PARKURU */
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 
@@ -165,13 +208,13 @@ gap:30px;
 background:#1b1b1b;
 border-radius:15px;
 overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.4);
 transition:.3s;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
 }
 
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-5px);
 }
 
 
@@ -184,44 +227,71 @@ object-fit:cover;
 
 .card h3{
 padding:20px;
-color:#FFD400;
-font-size:22px;
+text-align:center;
+color:#f5c400;
 }
 
 
 .card p{
 padding:0 20px 20px;
-color:#ddd;
+text-align:center;
 line-height:1.6;
 }
+/* HİZMETLER */
 
-
-/* HAKKIMIZDA */
-
-.about{
-background:#151515;
-}
-
-
-.about p{
-font-size:18px;
-line-height:1.8;
-margin-bottom:20px;
+.services .card,
+.why .card{
+padding:25px;
 text-align:center;
 }
 
 
-/* HİZMETLER */
+/* TEKLİF AL */
 
-.services{
-background:#0d0d0d;
+.teklif form{
+max-width:700px;
+margin:auto;
+background:#1b1b1b;
+padding:30px;
+border-radius:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
 
-/* NEDEN BİZ */
+.teklif input,
+.teklif textarea{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
 
-.why{
-background:#151515;
+
+.teklif textarea{
+height:120px;
+resize:none;
+}
+
+
+.teklif label{
+background:#252525;
+padding:12px;
+border-radius:8px;
+}
+
+
+.teklif button{
+background:#25D366;
+color:white;
+border:none;
+padding:15px;
+border-radius:10px;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
 }
 
 
@@ -232,13 +302,29 @@ text-align:center;
 }
 
 
-.contact p{
-font-size:20px;
-margin:15px;
-}/* WHATSAPP BUTONU */
+.call-btn{
+display:inline-block;
+margin-top:20px;
+background:#f5c400;
+color:#000;
+padding:15px 30px;
+border-radius:10px;
+font-weight:700;
+}
+/* FOOTER */
+
+footer{
+background:#050505;
+padding:25px;
+text-align:center;
+font-size:14px;
+color:#aaa;
+}
+
+
+/* WHATSAPP SABİT BUTON */
 
 .whatsapp-fixed{
-
 position:fixed;
 right:25px;
 bottom:25px;
@@ -251,335 +337,34 @@ align-items:center;
 justify-content:center;
 font-size:30px;
 z-index:999;
-
 }
 
 
-/* YUKARI ÇIK */
-
-.top-btn{
-
-position:fixed;
-left:25px;
-bottom:25px;
-width:50px;
-height:50px;
-background:#FFD400;
-color:#111;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:25px;
-font-weight:bold;
-z-index:999;
-
-}
-
-
-/* HAMBURGER */
-
-.menu-toggle{
-
-display:none;
-font-size:35px;
-color:#FFD400;
-cursor:pointer;
-
-}
-
-
-/* MOBİL */
+/* TELEFON UYUMLU */
 
 @media(max-width:768px){
 
-
-header{
-
-padding:20px 5%;
-
-}
-
-
-.menu-toggle{
-
-display:block;
-
-}
-
-
-nav{
-
-position:absolute;
-top:80px;
-left:0;
-width:100%;
-background:#080808;
-display:none;
-flex-direction:column;
-text-align:center;
-padding:30px 0;
-
-}
-
-
-nav a{
-
-padding:15px;
-
-}
-
-
-nav.active{
-
-display:flex;
-
-}
-
-
-.hero{
-
-height:80vh;
-padding:0 5%;
-
-}
-
-
 .hero h1{
-
-font-size:35px;
-
-}
-
-
-section{
-
-padding:60px 5%;
-
-}
-
-
-h2{
-
 font-size:32px;
+}
 
+.hero h3{
+font-size:18px;
+}
+
+
+.buttons{
+flex-direction:column;
+}
+
+
+.buttons a{
+text-align:center;
 }
 
 
 .cards{
-
 grid-template-columns:1fr;
-
-}
-
-
-  }
-/* EK EFEKTLER */
-
-.hero-text h1{
-animation: yukari 1s ease;
-}
-
-.hero-text p{
-animation: yukari 1.4s ease;
-}
-
-
-@keyframes yukari{
-
-from{
-opacity:0;
-transform:translateY(40px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-
-footer{
-
-background:#000;
-padding:30px;
-text-align:center;
-color:#aaa;
-
-}
-
-
-footer p{
-
-font-size:14px;
-
-}
-
-
-/* RESİMLER */
-
-.card img{
-
-transition:.4s;
-
-}.menu-toggle{
-display:none;
-font-size:35px;
-color:#FFD400;
-cursor:pointer;
-}
-
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-nav{
-display:none;
-position:absolute;
-top:80px;
-left:0;
-width:100%;
-background:#080808;
-flex-direction:column;
-text-align:center;
-padding:20px;
-}
-
-nav.active{
-display:flex;
-}
-
-  }
-
-
-.card:hover img{
-
-transform:scale(1.05);
-
-}
-.teklif-btn{
-display:inline-block;
-margin:0 20px 20px;
-padding:12px 25px;
-background:#25D366;
-color:white;
-border-radius:8px;
-font-weight:600;
-transition:.3s;
-}
-
-.teklif-btn:hover{
-transform:scale(1.05);
-}
-/* MAKİNE PARKURU YENİ TASARIM */
-
-.machines{
-background:#0b0b0b;
-}
-
-
-.machines .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-
-.machines .card{
-background:#181818;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.5);
-transition:.3s;
-}
-
-
-.machines .card:hover{
-transform:translateY(-8px);
-}
-
-
-.machines .card img{
-width:100%;
-height:230px;
-object-fit:cover;
-display:block;
-}
-
-
-.machines .card h3{
-text-align:center;
-padding:20px;
-margin:0;
-color:#FFD400;
-font-size:22px;
-}
-
-
-.machines h2{
-font-size:42px;
-margin-bottom:50px;
-}
-nav{
-display:flex;
-gap:25px;
-align-items:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:600;
-}
-
-
-.menu-toggle{
-display:none;
-cursor:pointer;
-font-size:30px;
-}@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-nav{
-display:none;
-position:absolute;
-top:80px;
-left:0;
-width:100%;
-background:#111;
-flex-direction:column;
-padding:20px;
-}
-
-nav.active{
-display:flex;
-  .teklif{
-padding:60px 20px;
-background:#111;
-}
-
-.teklif form{
-max-width:700px;
-margin:auto;
-background:#222;
-padding:30px;
-border-radius:15px;
-}
-
-.teklif h2{
-text-align:center;
-}
-
-.teklif label{
-display:block;
-margin:8px 0;
-}
 }
 
 }
