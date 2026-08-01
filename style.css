@@ -10,34 +10,27 @@ scroll-behavior:smooth;
 }
 
 body{
+background:#f5f5f5;
+color:#222;
+}
+
+
+.topbar{
 background:#111;
-color:white;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
+color:#fff;
 text-align:center;
-font-size:36px;
-margin-bottom:40px;
-color:#f5c400;
+padding:10px;
+font-size:14px;
 }
 
-a{
-text-decoration:none;
-color:white;
-}
+
 header{
-height:80px;
-background:#0a0a0a;
+background:#171717;
+color:white;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 5%;
+padding:15px 7%;
 position:sticky;
 top:0;
 z-index:1000;
@@ -45,17 +38,26 @@ z-index:1000;
 
 
 .logo{
-font-size:28px;
-font-weight:800;
-color:#f5c400;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+
+.logo-icon{
+font-size:45px;
+}
+
+
+.logo h1{
+color:#f7b500;
+font-size:26px;
 }
 
 
 .logo span{
-display:block;
 font-size:13px;
-font-weight:400;
-color:white;
+color:#ddd;
 }
 
 
@@ -66,30 +68,357 @@ gap:25px;
 
 
 nav a{
-font-size:16px;
-font-weight:600;
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
 }
 
 
 nav a:hover{
-color:#f5c400;
+color:#f7b500;
 }
 
 
 .menu-toggle{
 display:none;
-font-size:32px;
+font-size:35px;
 cursor:pointer;
 }
-@media(max-width:768px){
 
-header{
-padding:0 20px;
+
+
+/* HERO */
+
+.hero{
+height:85vh;
+background:url("santiye.jpg") center/cover;
+position:relative;
+display:flex;
+align-items:center;
 }
 
 
-.logo{
+.hero-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.65);
+}
+
+
+.hero-content{
+position:relative;
+color:white;
+max-width:800px;
+margin-left:7%;
+}
+
+
+.hero-content h3{
+color:#f7b500;
 font-size:22px;
+}
+
+
+.hero-content h1{
+font-size:50px;
+line-height:1.2;
+margin:20px 0;
+}
+
+
+.hero-content p{
+font-size:18px;
+}
+
+
+.hero-buttons{
+margin-top:30px;
+display:flex;
+gap:15px;
+}
+
+
+.hero-buttons a{
+background:#f7b500;
+color:#111;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+}
+
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+
+section{
+padding:70px 0;
+}
+
+
+h2{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#111;
+}
+
+
+
+/* HAKKIMIZDA */
+
+.about{
+background:white;
+text-align:center;
+}
+
+
+.about p{
+max-width:900px;
+margin:15px auto;
+font-size:17px;
+}
+
+
+.info-box{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+
+.info-box div{
+background:#111;
+color:white;
+padding:30px;
+border-radius:15px;
+}
+
+
+.info-box h3{
+margin-top:10px;
+}
+
+
+
+/* MAKİNELER */
+
+.machines{
+background:#eee;
+}
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px #0002;
+text-align:center;
+padding-bottom:20px;
+}
+
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+
+.card h3{
+padding:15px;
+}
+
+
+.card button{
+background:#f7b500;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+/* HİZMETLER */
+
+.services{
+background:white;
+}
+
+
+.services .card{
+padding:30px;
+}
+
+
+.services .card h3{
+color:#111;
+}
+
+
+.services .card p{
+color:#555;
+}
+
+
+
+
+
+/* TEKLİF */
+
+.teklif{
+background:#111;
+color:white;
+}
+
+
+.teklif h2{
+color:white;
+}
+
+
+.teklif p{
+text-align:center;
+margin-bottom:30px;
+}
+
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+
+form input,
+form select,
+form textarea{
+padding:15px;
+border-radius:8px;
+border:none;
+font-size:16px;
+}
+
+
+form textarea{
+height:130px;
+resize:none;
+}
+
+
+form button{
+background:#f7b500;
+border:none;
+padding:16px;
+font-size:18px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+
+
+
+/* GALERİ */
+
+.gallery{
+background:#eee;
+}
+
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+
+.gallery-grid img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:15px;
+}
+
+
+
+
+
+/* İLETİŞİM */
+
+.contact{
+background:white;
+text-align:center;
+}
+
+
+.contact p{
+font-size:18px;
+margin:10px;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+
+
+
+
+/* WHATSAPP */
+
+.whatsapp-fixed{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
+
+
+
+
+
+/* MOBİL */
+
+@media(max-width:768px){
+
+
+header{
+padding:15px 5%;
 }
 
 
@@ -99,12 +428,12 @@ display:block;
 
 
 nav{
-display:none;
 position:absolute;
 top:80px;
 left:0;
 width:100%;
-background:#0a0a0a;
+background:#111;
+display:none;
 flex-direction:column;
 text-align:center;
 padding:20px;
@@ -116,250 +445,18 @@ display:flex;
 }
 
 
-nav a{
-padding:12px;
-}
-
-}
-
-
-/* ANA SAYFA */
-
-.hero{
-min-height:80vh;
-display:flex;
-align-items:center;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-url("arka-plan.jpg");
-background-size:cover;
-background-position:center;
+.hero-content{
+margin:20px;
 }
 
 
-.hero-text{
-width:90%;
-max-width:900px;
-margin:auto;
+.hero-content h1{
+font-size:35px;
 }
 
 
-.hero h3{
-color:#f5c400;
-font-size:22px;
-}
-
-
-.hero h1{
-font-size:50px;
-margin:20px 0;
-}
-
-
-.hero p{
-font-size:20px;
-}
-
-
-.buttons{
-margin-top:30px;
-display:flex;
-gap:15px;
-}
-
-
-.buttons a{
-background:#f5c400;
-color:#000;
-padding:14px 25px;
-border-radius:10px;
-font-weight:700;
-  
-}
-/* HAKKIMIZDA */
-
-.about,
-.machines,
-.services,
-.why,
-.teklif,
-.contact{
-padding:70px 0;
-}
-
-
-.about p{
-max-width:900px;
-margin:15px auto;
-line-height:1.8;
-text-align:center;
-}
-
-
-/* MAKİNE PARKURU */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-
-.card{
-background:#1b1b1b;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.4);
-transition:.3s;
-}
-
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-
-.card h3{
-padding:20px;
-text-align:center;
-color:#f5c400;
-}
-
-
-.card p{
-padding:0 20px 20px;
-text-align:center;
-line-height:1.6;
-}
-/* HİZMETLER */
-
-.services .card,
-.why .card{
-padding:25px;
-text-align:center;
-}
-
-
-/* TEKLİF AL */
-
-.teklif form{
-max-width:700px;
-margin:auto;
-background:#1b1b1b;
-padding:30px;
-border-radius:20px;
-display:flex;
+.hero-buttons{
 flex-direction:column;
-gap:15px;
-}
-
-
-.teklif input,
-.teklif textarea{
-width:100%;
-padding:15px;
-border:none;
-border-radius:10px;
-font-size:16px;
-}
-
-
-.teklif textarea{
-height:120px;
-resize:none;
-}
-
-
-.teklif label{
-background:#252525;
-padding:12px;
-border-radius:8px;
-}
-
-
-.teklif button{
-background:#25D366;
-color:white;
-border:none;
-padding:15px;
-border-radius:10px;
-font-size:18px;
-font-weight:700;
-cursor:pointer;
-}
-
-
-/* İLETİŞİM */
-
-.contact{
-text-align:center;
-}
-
-
-.call-btn{
-display:inline-block;
-margin-top:20px;
-background:#f5c400;
-color:#000;
-padding:15px 30px;
-border-radius:10px;
-font-weight:700;
-}
-/* FOOTER */
-
-footer{
-background:#050505;
-padding:25px;
-text-align:center;
-font-size:14px;
-color:#aaa;
-}
-
-
-/* WHATSAPP SABİT BUTON */
-
-.whatsapp-fixed{
-position:fixed;
-right:25px;
-bottom:25px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-z-index:999;
-}
-
-
-/* TELEFON UYUMLU */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:32px;
-}
-
-.hero h3{
-font-size:18px;
-}
-
-
-.buttons{
-flex-direction:column;
-}
-
-
-.buttons a{
-text-align:center;
 }
 
 
@@ -367,411 +464,15 @@ text-align:center;
 grid-template-columns:1fr;
 }
 
-}
-.teklif button[type="submit"]{
-display:block !important;
-width:100%;
-background:#25D366 !important;
-color:white !important;
-padding:18px !important;
-font-size:20px !important;
-border-radius:12px;
-border:none;
-margin-top:25px;
-font-weight:bold;
-}
-.teklif select{
-height:60px;
-width:100%;
-padding:0 20px;
-font-size:20px;
-font-weight:600;
-border-radius:12px;
-margin-bottom:20px;
-background:white;
-color:#111;
+
+.info-box{
+grid-template-columns:1fr;
 }
 
-
-.teklif label{
-font-size:20px;
-font-weight:700;
-margin-bottom:10px;
-}
-.teklif select,
-.teklif input[type="text"],
-.teklif input[type="tel"]{
-width:100%;
-height:55px;
-padding:0 15px;
-font-size:16px;
-border-radius:10px;
-border:none;
-margin-bottom:15px;
-}
-.form-select{
-width:100%;
-height:55px;
-padding:0 15px;
-font-size:17px;
-border-radius:10px;
-margin-bottom:15px;
-}
-.form-select{
-width:100%;
-height:55px;
-padding:0 15px;
-font-size:18px;
-border-radius:10px;
-border:none;
-margin-bottom:15px;
-background:white;
-color:#111;
-display:block;
-}
-/* Makine kartlarını güzelleştir */
-
-.card{
-transition:0.35s;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.25);
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(0,0,0,.35);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-transition:0.35s;
-}
-
-.card:hover img{
-transform:scale(1.05);
-}
-
-.card h3{
-padding:15px;
-text-align:center;
-font-size:20px;
-font-weight:700;
-}
-/* ===== LÜKS ANA SAYFA ===== */
-
-.hero{
-    position:relative;
-    min-height:100vh;
-    background:url("hero-bg.jpg") center center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
-
-.hero .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
-}
-
-.hero-text{
-    position:relative;
-    z-index:2;
-    color:#fff;
-    max-width:900px;
-    padding:20px;
-}
-
-.hero h3{
-    color:#ffcc00;
-    font-size:24px;
-    letter-spacing:3px;
-    margin-bottom:15px;
-}
-
-.hero h1{
-    font-size:58px;
-    font-weight:800;
-    line-height:1.2;
-    margin-bottom:20px;
-    text-shadow:3px 3px 10px rgba(0,0,0,.5);
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:35px;
-}
-
-.hero .buttons a{
-    display:inline-block;
-    margin:10px;
-    padding:16px 32px;
-    border-radius:10px;
-    font-weight:700;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.hero .buttons a:first-child{
-    background:#ffb400;
-    color:#000;
-}
-
-.hero .buttons a:last-child{
-    background:#25D366;
-    color:#fff;
-}
-
-.hero .buttons a:hover{
-    transform:translateY(-3px);
-  /* ===== PREMIUM MAKİNE KARTLARI ===== */
-
-.machines .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.card{
-background:#fff;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-transition:.35s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 18px 40px rgba(0,0,0,.30);
-}
-
-.card img{
-width:100%;
-height:230px;
-object-fit:cover;
-transition:.35s;
-}
-
-.card:hover img{
-transform:scale(1.06);
-}
-
-.card h3{
-padding:18px;
-font-size:22px;
-font-weight:700;
-text-align:center;
-color:#222;
-}
-
-section{
-padding:80px 20px;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-}
-  /* ===== LÜKS MENÜ VE TEKLİF ALANI ===== */
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(10px);
-z-index:999;
-}
-
-.logo{
-font-size:28px;
-font-weight:800;
-color:#fff;
-}
-
-.logo span{
-display:block;
-font-size:13px;
-color:#ffcc00;
-margin-top:4px;
-}
-
-nav a{
-color:#fff;
-font-weight:600;
-margin:0 15px;
-transition:.3s;
-text-decoration:none;
-}
-
-nav a:hover{
-color:#ffcc00;
-}
-
-.teklif{
-background:#f7f7f7;
-}
-
-.teklif form{
-max-width:700px;
-margin:auto;
-}
-
-.teklif input,
-.teklif textarea,
-.form-select{
-width:100%;
-padding:16px;
-margin-bottom:18px;
-border-radius:12px;
-border:1px solid #ddd;
-font-size:17px;
-}
-
-.teklif textarea{
-min-height:130px;
-resize:vertical;
-}
-
-.teklif button{
-width:100%;
-padding:18px;
-background:#25D366;
-color:#fff;
-font-size:20px;
-font-weight:700;
-border:none;
-border-radius:12px;
-cursor
-  
-}/* SABİT TELEFON BUTONU */
-
-.call-fixed{
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-background:#ffb400;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-text-decoration:none;
-box-shadow:0 8px 20px rgba(0,0,0,.3);
-z-index:9999;
-transition:.3s;
-}
-
-.call-fixed:hover{
-transform:scale(1.1);
-}
-/* ===== GALERİ FOTOĞRAF DÜZENİ ===== */
 
 .gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
+grid-template-columns:1fr 1fr;
 }
 
-.gallery-item{
-height:250px;
-overflow:hidden;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.gallery-item img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.4s;
-}
-
-.gallery-item:hover img{
-transform:scale(1.08);
-}
-
-
-/* ===== MAKİNE FOTOĞRAFLARI ===== */
-
-.machine-card img{
-height:230px;
-width:100%;
-object-fit:cover;
-  }
-/* FOTOĞRAF TAM DÜZENLEME */
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.gallery-item{
-    width:100%;
-    height:220px;
-    border-radius:15px;
-    overflow:hidden;
-}
-
-.gallery-item img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    display:block;
-}
-
-
-/* Telefon görünümü */
-
-@media(max-width:768px){
-
-.gallery-grid{
-    grid-template-columns:1fr 1fr;
-}
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:20px;
-}
-
-.gallery-item{
-    height:250px;
-    overflow:hidden;
-    border-radius:20px;
-}
-
-.gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-
-/* Telefon için */
-
-@media(max-width:768px){
-
-.gallery-grid{
-    grid-template-columns:1fr;
-}
-
-.gallery-item{
-    height:220px;
-}
-
-}
-.gallery-item,
-.gallery-item img{
-    height:170px;
-}
 
 }
