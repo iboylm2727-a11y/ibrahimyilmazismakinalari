@@ -380,3 +380,21 @@ border:none;
 margin-top:25px;
 font-weight:bold;
 }
+.teklif select{
+height:60px;
+width:100%;
+padding:0 20px;
+font-size:20px;
+font-weight:600;
+border-radius:12px;
+margin-bottom:20px;
+background:white;
+color:#111;
+}
+
+
+.teklif label{
+font-size:20px;
+font-weight:700;
+margin-bottom:10px;
+}
