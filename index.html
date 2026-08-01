@@ -1,91 +1,114 @@
-<!DOCTYPE html>
-<html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>İbrahim Yılmaz İş Makinaları Kiralama</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-    <h1>İbrahim Yılmaz</h1>
-    <p>İş Makinaları Kiralama</p>
-</header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 
-<section class="hero">
-    <h2>Profesyonel İş Makinaları Hizmeti</h2>
-    <p>
-        Ekskavatör, Beko Loder, Manitou, Vinç, Silindir,
-        Greyder ve daha fazlası için güvenilir kiralama hizmeti.
-    </p>
-
-    <a href="https://wa.me/905462182726" class="button">
-        WhatsApp'tan Ulaş
-    </a>
-</section>
+body {
+    background: #f4f4f4;
+    color: #222;
+}
 
 
-<section class="machines">
-
-    <h2>Hizmetlerimiz</h2>
-
-    <div class="card">
-        <h3>Ekskavatör</h3>
-        <p>Kazı ve hafriyat işleriniz için güçlü makineler.</p>
-    </div>
-
-    <div class="card">
-        <h3>Beko Loder</h3>
-        <p>İnşaat ve altyapı çalışmalarına uygun çözümler.</p>
-    </div>
-
-    <div class="card">
-        <h3>Vinç</h3>
-        <p>Ağır kaldırma ve taşıma işleriniz için.</p>
-    </div>
-
-    <div class="card">
-        <h3>Manitou</h3>
-        <p>Yükleme ve taşıma ihtiyaçlarınız için.</p>
-    </div>
-
-    <div class="card">
-        <h3>Silindir & Greyder</h3>
-        <p>Yol ve zemin çalışmalarında profesyonel hizmet.</p>
-    </div>
-
-</section>
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
 
-<section class="contact">
-
-<h2>İletişim</h2>
-
-<p>Telefon: 0546 218 27 26</p>
-
-<a href="https://wa.me/905462182726">
-WhatsApp Mesaj Gönder
-</a>
-
-</section>
+header h1 {
+    font-size: 35px;
+}
 
 
-<footer>
-
-<p>© 2026 İbrahim Yılmaz İş Makinaları</p>
-
-</footer>
+header p {
+    font-size: 20px;
+}
 
 
-</body>
-</html>
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+.machines {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.machines h2 {
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background: white;
+    margin: 15px auto;
+    padding: 25px;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #d35400;
+}
+
+
+.contact {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.contact a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #25D366;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
