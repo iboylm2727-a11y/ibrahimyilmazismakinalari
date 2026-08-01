@@ -1,17 +1,7 @@
-const menu = document.querySelector(".menu-toggle");
+function toggleMenu(){
+
 const nav = document.querySelector("nav");
 
-menu.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
+nav.classList.toggle("active");
 
-
-document.querySelectorAll("nav a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        nav.classList.remove("active");
-
-    });
-
-});
+}
