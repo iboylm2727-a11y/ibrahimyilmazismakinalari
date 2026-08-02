@@ -564,3 +564,20 @@ grid-template-columns:1fr 1fr;
 .logo span{
     font-size:14px;
 }
+.instagram-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #E1306C, #F77737, #FCAF45);
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 12px;
+}
+
+.instagram-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
