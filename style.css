@@ -665,7 +665,8 @@ grid-template-columns:1fr 1fr;
 }
 
 .stat-box{
-    background:#fff;
+    background:#111;
+    color:#fff;
     width:240px;
     padding:30px;
     border-radius:18px;
@@ -677,7 +678,11 @@ grid-template-columns:1fr 1fr;
 .stat-box:hover{
     transform:translateY(-8px);
 }
-
+.stat-box i{
+    font-size:42px;
+    color:#f7b500;
+    margin-bottom:15px;
+}
 .stat-box h2{
     color:#f4b400;
     font-size:42px;
@@ -686,6 +691,6 @@ grid-template-columns:1fr 1fr;
 
 .stat-box p{
     font-size:18px;
-    color:#444;
+    color:#ddd;
     font-weight:600;
 }
