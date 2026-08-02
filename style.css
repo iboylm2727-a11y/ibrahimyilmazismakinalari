@@ -756,3 +756,34 @@ grid-template-columns:1fr 1fr;
     max-width:320px;
 }
 }
+/* HERO BUTON DÜZELTME */
+
+.hero-buttons{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:20px !important;
+    flex-wrap:wrap !important;
+}
+
+.hero-buttons a{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:220px !important;
+    height:60px !important;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero-buttons{
+    flex-direction:column !important;
+}
+
+.hero-buttons a{
+    width:90% !important;
+    max-width:320px !important;
+}
+
+}
