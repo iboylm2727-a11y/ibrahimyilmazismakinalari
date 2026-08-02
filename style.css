@@ -642,3 +642,9 @@ grid-template-columns:1fr 1fr;
     font-size:16px;
     line-height:1.7;
 }
+.advantage-card i{
+    font-size:48px;
+    color:#f4b400;
+    display:block;
+    margin-bottom:20px;
+}
