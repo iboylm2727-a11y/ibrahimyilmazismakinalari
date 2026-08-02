@@ -581,3 +581,64 @@ grid-template-columns:1fr 1fr;
     transform: scale(1.05);
     opacity: 0.9;
 }
+/* ===== Profesyonel Çözümlerimiz ===== */
+
+.advantages{
+    padding:80px 20px;
+    background:#f8f9fa;
+    text-align:center;
+}
+
+.advantages h2{
+    font-size:38px;
+    color:#222;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.advantages-text{
+    max-width:750px;
+    margin:0 auto 50px;
+    color:#666;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.advantage-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.advantage-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.advantage-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.advantage-card span{
+    font-size:48px;
+    display:block;
+    margin-bottom:18px;
+}
+
+.advantage-card h3{
+    color:#111;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.advantage-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}
